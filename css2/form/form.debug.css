@@ -1,0 +1,293 @@
+*:focus {
+  outline: none; 
+}
+.nex-clear { clear:both;}
+.nex-form-wraper { vertical-align:top;}
+.nex-form-display-block {
+display:block;
+}
+.nex-form-display-inline,
+.nex-form-display-inline-block {
+display:inline-block;
+display:-moz-inline-stack;
+*display:inline;
+zoom:1;
+}
+.nex-form-item {
+  font: normal 12px tahoma, arial, verdana, sans-serif; 
+}
+.nex-form-item-label {
+  display: block;
+  padding: 3px 0 0;
+  font-size: 12px;
+  user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  cursor: default; 
+}
+.nex-form-item-label-left { margin-right:5px;}
+.nex-form-item-label-right { margin-left:5px;}
+.nex-form-item-label-bottom,.nex-form-item-label-top { margin-bottom:5px;}
+.nex-form-field,
+.nex-form-display {
+  margin: 0 0 0 0;
+  font: normal 12px tahoma, arial, verdana, sans-serif;
+  color: black; }
+.nex-form-display {
+  padding-top: 3px; }  
+.nex-form-text {
+  height: 18px;
+  line-height: 18px;
+  vertical-align: top; 
+}
+.nex-form-text,
+textarea.x-form-field {
+  padding: 1px 3px;
+  background: repeat-x 0 0;
+  border: 1px solid;
+  background-color: white;
+  background-image: url('images/text-bg.gif');
+  border-color: #b5b8c8; 
+}  
+.nex-form-focus,
+textarea.nex-form-focus {
+  border-color: #7eadd9; 
+} 
+/*combo*/
+.nex-form-combo-cell { width:17px;vertical-align:middle;} 
+.nex-form-combo {
+  background-image: url('images/combo.gif');
+  background-position: 0 0;
+  width: 17px;
+  height: 21px;
+  overflow:hidden;
+  border-bottom: 1px solid #b5b8c8;
+  cursor: pointer;
+  cursor: hand; 
+}
+.nex-form-wraper-focus .nex-form-combo {
+  background-position: -51px 0;
+  border-bottom-color: #7eadd9; 
+} 
+.nex-form-combo-over {
+  background-position: -17px 0;
+  border-bottom-color: #7eadd9; 
+} 
+.nex-form-combo-click {
+  background-position: -34px 0;
+  border-bottom-color: null; 
+} 
+.nex-form-empty-field, textarea.nex-form-empty-field {
+  color: gray; 
+}
+/*date*/
+.nex-form-date-combo {
+	background-image: url('images/date-combo.gif');
+}
+/*textarea*/
+textarea.nex-form-textarea {
+  resize: none; 
+}
+/*spinner*/
+.nex-form-spinner-up,
+.nex-form-spinner-down {
+  background-image: url('images/spinner.gif');
+  width: 17px !important;
+  height: 11px !important;
+  font-size: 0;
+  /*for IE*/
+  border-bottom: 0; 
+  cursor: pointer;
+  cursor: hand;
+}
+.nex-form-spinner-down {
+  background-position: 0 -11px; 
+}
+.nex-form-wraper-focus .nex-form-spinner-down {
+  background-position: -51px -11px; }
+.nex-form-wraper-focus .nex-form-spinner-up {
+  background-position: -51px 0; }
+.nex-form-spinner-up-over {
+  	 background-position: -17px 0;
+ 	 border-bottom-color: #7eadd9;
+}
+.nex-form-spinner-down-over {
+ 	 background-position: -17px -11px;
+ 	 border-bottom-color: #7eadd9;
+}
+.nex-form-spinner-up-click {
+  	 background-position: -17px 0;
+ 	 border-bottom-color: #7eadd9;
+}
+  
+.nex-form-spinner-down-click {
+	background-position: -34px -11px; 
+}
+.nex-form-spinner-up-click {
+ 	background-position: -34px 0; 
+}
+/*radio checkbox*/
+.nex-form-checkbox,
+.nex-form-radio {
+  vertical-align: -1px;
+  overflow: hidden;
+  padding: 0;
+  margin:0;
+  width:13px; height:13px;
+  vertical-align:bottom;
+}
+.nex-form-cb-label-before {
+  margin-right: 4px; 
+}
+.nex-form-cb-label-after {
+  margin-left: 4px;
+  vertical-align: bottom;
+  margin-right: 4px;
+  /*vertical-align: middle;  */
+}
+.nex-form-radio-item {
+ 	float : left;
+	margin-bottom:3px;
+} 
+.nex-form-checkbox-item {
+ 	float : left;
+	margin-bottom:3px;
+} 
+
+.nex-form-valid-error .nex-form-text,
+.nex-form-valid-error .nex-form-radio-wraper,
+.nex-form-valid-error .nex-form-checkbox-wraper {
+	border:1px solid red;
+} 
+
+.nex-form-disabled {
+opacity: 0.5;
+filter: alpha(opacity=50);
+}
+.nex-form-disabled *{
+	cursor:default;
+}
+.nex-form-disabled .nex-form-item-label,
+.nex-form-disabled .nex-form-cb-label {
+	color:gray;
+}
+.nex-form-readonly {
+opacity: 0.5;
+filter: alpha(opacity=50);
+}
+.nex-form-readonly *{
+	cursor:default;
+}
+.nex-form-readonly .nex-form-item-label,
+.nex-form-readonly .nex-form-cb-label {
+	color:gray;
+}
+
+/*select*/
+
+.nex-form-select-wraper input { cursor:pointer;}
+
+.nex-form-select-list {
+	font:normal 13px tahoma, arial, verdana, sans-serif;
+	position:absolute;
+	z-index:199999;
+	border:1px #98c0f4 solid;
+	background:#FFFFFF;
+	left:0px;
+	top:0px;
+	text-align: left;
+	overflow:auto;
+}
+.nex-form-select-shadow {
+	position: absolute;
+	margin:0px;
+	padding:0px;
+	margin-top:2px;
+	margin-left:2px;
+	background-color: #999999;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+	z-index:199998;
+	_margin:0px;
+	_padding: 0 2px 2px 0;
+}
+.nex-form-select-shadow iframe {
+opacity: 0;
+filter: alpha(opacity=0);
+}
+
+.nex-form-select-list-body {
+overflow:auto;
+overflow-x: hidden;
+}
+.nex-form-select-list-item {
+/*white-space: nowrap;*/
+padding:2px;
+position:relative;
+border:1px dotted #FFFFFF;
+cursor:pointer;
+use-select:none;
+}
+
+.nex-form-select-list-item-selected {
+	background: #cbdaf0;
+	border-color: #8eabe4;
+	border-style:dotted;
+}
+.nex-form-select-list-item-over{
+	background: #dfe8f6;
+	border-color: #a3bae9;
+	border-style:dotted;
+}
+.nex-form-select-list-item-disabled {
+opacity: 0.6; 
+filter: alpha(opacity=60);
+color:#CCC;
+cursor: default;
+}
+/*multiselect*/
+.nex-form-multiselect-list {
+	font:normal 13px tahoma, arial, verdana, sans-serif;
+	background:#FFFFFF;
+	text-align: left;
+	overflow:hidden;
+	display:block;
+	position:relative;
+}
+
+
+.nex-form-multiselect-list-body {
+overflow:auto;
+overflow-x:hidden;
+position:relative;
+border:1px #98c0f4 solid;
+}
+.nex-form-valid-error .nex-form-multiselect-list-body {
+	border:1px solid red;
+} 
+.nex-form-multiselect-list-item {
+padding:2px;
+position:relative;
+border:1px dotted #FFFFFF;
+cursor:pointer;
+use-select:none;
+}
+
+.nex-form-multiselect-list-item-selected {
+	background: #cbdaf0;
+	border-color: #8eabe4;
+	border-style:dotted;
+}
+.nex-form-multiselect-list-item-over{
+	background: #dfe8f6;
+	border-color: #a3bae9;
+	border-style:dotted;
+}
+.nex-form-multiselect-list-item-disabled {
+opacity: 0.6; 
+filter: alpha(opacity=60);
+color:#CCC;
+cursor: default;
+}

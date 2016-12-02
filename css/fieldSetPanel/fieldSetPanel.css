@@ -1,0 +1,36 @@
+/*fieldSet*/
+.nex-fieldset-panel { border:none;}
+.nex-fieldset { 
+margin:0px;
+padding:0;
+border: 1px solid #ccc;
+overflow:hidden;
+}
+.nex-fieldset-legend {
+margin-left:15px;}
+.fieldset-legend-collapse {
+	display:inline-block;
+	width:14px;
+	height:14px;
+	vertical-align:middle;
+	background:url(images/dialog_tools.png) no-repeat -33px -18px;
+	cursor:pointer;
+}
+.nex-legend-inner { padding:0px; margin:0px; vertical-align:middle;cursor:pointer;}
+.nex-legend-text { }
+.fieldset-legend-expand {
+	display:inline-block;
+	width:14px;
+	height:14px;
+	vertical-align:middle;
+	background:url(images/dialog_tools.png) no-repeat -33px -1px;
+	cursor:pointer;
+}
+.nex-legend-inner {}
+.nex-legend-text {vertical-align:middle; margin:0; padding:0;}
+.nex-legend-checkbox { margin:0px; padding:0px;}
+.nex-legend-icon {}
+.nex-fieldset-body {
+	overflow:hidden;
+}
+.legend-close { overflow:hidden !important;}

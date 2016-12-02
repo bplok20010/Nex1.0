@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+<script type="text/javascript" src="js/nex/tree/jquery.nexTree.js"></script>
+<script type="text/javascript" src="js/nex/tree/jquery.nexTree.checkbox.js"></script>
+<script type="text/javascript" src="js/nex/tree/jquery.nexTree.toTree.js"></script>
+<title>树形插件</title>
+</head>
+<link href="./css/tree/nexTree.css" rel="stylesheet" type="text/css" />
+<body>
+<div id="demo1" style="width:40%">
+<ul>
+	<li><span><a href="www.baidu.com" target="_blank">百度</a></span>
+		<ul>
+		<li><span>a</span>
+			<ul>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+			</ul>
+
+		</li>
+		<li><span><span onclick="alert('nexTree');">点击</span></span></li>
+		<li><span>a</span></li>
+		<li><span>a</span></li>
+		<li><span>a</span></li>
+		<li><span>a</span>
+			<ul>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+				<li><span>a</span></li>
+			</ul>
+		</li>
+		<li><span>a</span></li>
+		<li><span>a</span></li>
+		<li><span>a</span></li>
+		<li><span>a</span></li>
+	</ul>
+	</li>
+	<li><span>a</span></li>
+	<li><span>a</span></li>
+	<li><span>a</span></li>
+	<li><span>a</span></li>
+	<li><span>a</span></li>
+	<li><span>a</span></li>
+	<li><span>a</span></li>
+	<li><span>a</span></li>
+	<li><span>a</span></li>
+</ul>
+</div>
+<script type="text/javascript">
+$("#demo1 >ul").toTree();
+</script>
+</body>
+</html>

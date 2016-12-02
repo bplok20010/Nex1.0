@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>bigTable-Test</title>
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+<script type="text/javascript" src="js/nex/grid/jquery.nexGrid.js"></script>
+<script type="text/javascript" src="js/nex/grid/jquery.nexGrid.pagination.js"></script>
+<script type="text/javascript" src="js/nex/grid/jquery.nexGrid.lockrow.js"></script>
+<script type="text/javascript" src="js/nex/grid/jquery.nexGrid.expandrow.js"></script>
+<script type="text/javascript" src="js/nex/grid/jquery.nexGrid.lockcolumn.js"></script>
+
+<script type="text/javascript" src="js/nex/grid/jquery.nexGrid.group.js"></script>
+
+
+<script type="text/javascript" src="js/nex/grid/jquery.nexGrid.search.js"></script>
+<script type="text/javascript" src="js/nex/grid/jquery.nexGrid.footer.js"></script>
+
+<script type="text/javascript" src="js/nex/grid/jquery.nexGrid.mergecell.js"></script>
+<script type="text/javascript" src="js/nex/grid/jquery.nexGrid.responsive.js"></script>
+
+<link href="css/grid.debug.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+<div style="width:50%; border:1px solid red; height:200px; overflow:auto; position:relative;">
+<div style="width:300px; height:100%; background:#CCCCCC; position:relative;"></div>
+</div>
+<div style=" width:80%; height:500px; " id="tab"></div>
+<div id="form"></div>
+<script type="text/javascript">
+function getData(){
+	var rows = [];
+	for(var i=1; i<=40000; i++){
+		var price1=1;
+		var price2=1;
+		var price3=1;
+		var price4=1;
+		var price5=1;
+		var price6=1;
+		var price7=1;
+		var price8=1;
+		var price9=1;
+		var price10=1;
+		var price11=1;
+		var price12=1;
+		var price13=1;
+		var price14=1;
+		var price15=1;
+		var price16=1;
+		var price17=1;
+		var price18=1;
+		var price19=1;
+		var price20=1;
+		var price21=1;
+		var price22=1;
+		var price23=1;
+		var price24=1;
+		var price25=1;
+		var price26=1;
+		var price27=1;
+		var price28=1;
+		var price29=1;
+		var price30=1;
+		var price31=1;
+		var price32=1;
+		var price33=1;
+		var price34=1;
+		var price35=1;
+		var price36=1;
+		var price37=1;
+		var price38=1;
+		var price39=1;
+		var price40=1;
+		var price41=1;
+		var price42=1;
+		var price43=1;
+		var price44=1;
+		var price45=1;
+		var price46=1;
+		var price47=1;
+		var price48=1;
+		var price49=1;
+		var price50=1;
+	 
+		rows.push({
+			_expand : $.now,
+			//_openExpand : i%5 ? true : false,
+			price1: price1+i,
+			price2: price2-i,
+			price3: i%3,
+			price4: price1,
+			price5: price1,
+			price6: price1,
+			price7: price1,
+			price8: price1,
+			price9: price1,
+			price10: price1,
+			price11: price1,
+			price12: price1,
+			price13: price1,
+			price14: price1,
+			price15: price1,
+			price16: price1,
+			price17: price1,
+			price18: price1,
+			price19: price1,
+			price20: price1,
+			price21: price1,
+			price22: price1,
+			price23: price1,
+			price24: price1,
+			price25: price1,
+			price26: price1,
+			price27: price1,
+			price28: price1,
+			price29: price1,
+			price30: price1,
+			price31: price1,
+			price32: price1,
+			price33: price1,
+			price34: price1,
+			price35: price1,
+			price36: price1,
+			price37: price1,
+			price38: price1,
+			price39: price1,
+			price40: price1,
+			price41: price1,
+			price42: price1,
+			price43: price1,
+			price44: price1,
+			price45: price1,
+			price46: price1,
+			price47: price1,
+			price48: price1,
+			price49: price1,
+			price50: price1,
+			allprice: price1+price2+price3+price4+price5+price6+price7+price8+price9+price10
+			+price11+price12+price13+price14+price15+price16+price17+price18+price19+price20
+			+price21+price22+price23+price24+price25+price26+price27+price28+price29+price30
+			+price31+price32+price33+price34+price35+price36+price37+price38+price39+price40
+			+price41+price42+price43+price44+price45+price46+price47+price48+price49+price50
+		});
+	}
+	return rows;
+}
+var datas = getData();
+var grid = $("#tab").extgrid({
+	pageSize:40,
+	lockRows : [0,1,2,3],
+	selectRows : [0,1,2,3],
+	lockColumns:['id','price2','price3'],
+	//onSelect : function(){return false},
+	data:datas,
+	toolBars : [{text:'新增一行',callBack:function(){
+		grid.addRow({});
+	}}],
+	columns : [
+		/*{field:'price1',width:'10%'},
+		{field:'price2',width:'10%'},
+		{field:'price3',width:'10%'},
+		{field:'price4',width:'10%'},
+		{field:'price5',width:'10%'},
+		{field:'price6',width:'10%'},
+		{field:'allprice',width:'10%'},
+		{field:'price50',editor:{type:'text'},width:'10%'}*/
+		//{field:'id',width:'10%'},
+		//{field:'title',width:'10%'},
+		//{field:'catid',width:'10%'},
+		//{field:'url',width:'10%'}
+	],
+	//url : 'list.php?ad=adf',
+	minWidth : 200,
+	rowNumbersWidth:42,
+	forceFit : false ,
+	responsive : true,
+	lazyLoadRow : true,
+	pageTotal : 100000,
+	groupBy : 'expire',
+	pk:'id',
+	showFooter : true,
+	footerData : [datas[0]],
+	autoHeight:false,
+	checkBox:true,
+	//singleSelect:true,
+	moveColumns : true,
+	title : 'extgird可编辑测试',
+	pagination:true
+	//,rowStyler:"background:#FFFFCC;color:#990000;"
+	});
+
+var activeData = {};
+var activeRid = null;
+grid.bind("onClickCell",function(cell,rowId,field,value,e){
+//	console.log("onClickCell");
+	return ;
+	//cell.srcElement.onfocus=true;
+	grid.getCellEditor(rowId,field).getInput().focus();
+	var grid = this;
+	grid.saveEditCell();
+	$(document).unbind("click.editor");
+	
+	
+	//IE有显示的BUG 应该换成以下写法
+	setTimeout(function(){
+		grid.fireEvent("onScroll");
+		grid.editCell(rowId,field);
+	},0);
+	//其他写法
+	//grid.editRow(rowId);
+	
+	setTimeout(function(){
+		$(document).bind('click.editor',function(){
+			grid.saveEditCell();
+			$(document).unbind("click.editor");
+		});
+	},0);
+});
+
+grid.bind("onCellEdit",function(t,rid,field,rowData){
+	var fValue=this.getFieldValue(rid,field);//获取单元格数据   
+	var allprice=this.getFieldValue(rid,'allprice');//获取单元格数据   
+ 	var newallprice=parseFloat(allprice)+parseFloat(fValue);
+ 	//alert("rid=="+rid+"\nallprice="+allprice+"\nnewallprice="+newallprice);
+	grid.setFieldValue(rid,'allprice',newallprice); //设置单元格数据   
+});
+</script>
+
+</body>
+</html>

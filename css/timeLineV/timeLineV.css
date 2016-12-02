@@ -1,0 +1,46 @@
+.nex-timeline {
+	font-family:Microsoft YaHei,Tahoma,Arial;
+	font-size:12px;
+	overflow:hidden;
+	position:relative;
+	outline:0;
+}
+.nex-timeline-item-wraper-v { position:relative;}
+.nex-timeline-item-inner-v { position:relative; }
+.nex-timeline-item-v { position:relative; }
+.nex-timeline-item-left-v { width:150px; height:100%; left:0px; position: absolute;}
+.nex-timeline-item-center-v { width:20px; height:100%;position:absolute;}
+.nex-timeline-item-right-v { width:150px;height:100%;position:absolute;}
+.nex-timeline-circle-wraper-v {  position:absolute; top:50%; margin-top:-6px; left:50%; margin-left:-6px; cursor:pointer;}
+.nex-timeline-circle-v { border-radius:50%;}
+.nex-timeline-circle1-v { width:5px; height:5px; padding:3px; border: 1px solid #FF6666; background:#FFF}
+.nex-timeline-circle2-v {  width:5px; height:5px; background:#FF6666; }
+.nex-timeline-line-v { width:2px; height:100%; background: #FF6666; position:absolute; left:50%; margin-left:-1px; }
+.nex-timeline-item-start-v .nex-timeline-line-v {
+	top:50%;
+	height:50%;
+}
+.nex-timeline-item-end-v .nex-timeline-line-v {
+	top:0px;
+	height:50%;
+}
+/*.nex-timeline-item-bottom { text-align:center; font-size: 15px; font-weight:bold;}
+.nex-timeline-item-bottom .year {
+	display: block;
+	color: #d0d0d0;
+	font-weight:normal;
+	font-size: 12px;
+}
+.nex-timeline-item-top .nex-timeline-item-tips {
+	padding:5px;
+	position:absolute;
+	bottom:0px;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+*/
+.nex-timeline-circle-over .nex-timeline-circle1-v{
+	border-color:#CC3333;	
+}
+.nex-timeline-circle-over .nex-timeline-circle2-v{
+	background-color:#CC3333;	
+}

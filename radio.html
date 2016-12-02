@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FORMUI</title>
+	
+</head>
+<body class="">	
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+<script type="text/javascript" src="js/nex/form/jquery.validator.js"></script>
+<script type="text/javascript" src="js/nex/form/jquery.nexForm.js"></script>
+<link rel="stylesheet" type="text/css" href="css/form.debug.css" />
+<div id="myt" style="margin-top:50px; margin-left:50px;"></div>
+<button onClick="text.setLabelText('test')">ddd</button><button onClick="text.setLabelText('test',false)">ddd</button>
+<button onClick="text.selectText()">ddd</button><button onClick="text.val('')">ddd</button>
+<script type="text/javascript">
+var text1 = new Nex.form({
+	type : 'checkbox',
+	name : 'name',
+	width : 150,
+	value : '1',
+	display:'block',
+	labelText: '年龄',
+	placeholder : 'abc',
+	items : [{name:1,value:'abc',display:'block'},{name:1,value:'2'},{name:'我的',value:'3'}],
+	labelWidth : 50,
+	onComboClick : function(){
+		console.log('click')
+	},
+	rules : ['number'],
+	onValidError : function(){
+		//console.log('error');
+		},
+	onChange : function(){
+		console.log( 1 )
+	},
+	renderTo : $("#myt")
+});
+var text = text1;
+var text2 = new Nex.form({
+	type : 'spinner',
+	name : 'name',
+	width : 150,
+	value : 'date',
+	labelText: '年月',
+	placeholder : '2012-07-08',
+	labelWidth : 50,
+	onComboClick : function(){
+		console.log('click')
+	},
+	rules : ['number'],
+	onValidError : function(){
+		console.log('error');
+		},
+	onChange : function(){
+		console.log( this.val() )
+	},
+	renderTo : $("#myt")
+});
+</script>
+
+<div class="nex-form-wraper  nex-field-default" >
+	<label for="textfield-1015-inputEl">test</label><table id="textfield-1015" class="nex-field nex-form-item" style="border-width: 0px; table-layout: fixed; width: 320px;" cellspacing="0"
+	cellpadding="0">
+		<tbody>
+			<tr id="textfield-1015-inputRow">
+				<td id="textfield-1015-labelCell" style="" valign="top" halign="left"
+				width="95">
+					<label id="textfield-1015-labelEl" for="textfield-1015-inputEl" class="nex-form-item-label nex-form-item-label-left" style="width:90px;margin-right:5px;">
+						
+					</label>
+				</td>
+				<td class="nex-form-item-body " id="textfield-1015-bodyEl" style="width: 100%;">
+					<input id="textfield-1015-inputEl" type="text"  name=""
+					value="" style="width:167px;" class="nex-form-field nex-form-text" autocomplete="off" >
+				</td>
+				<td id="textfield-1015-bodyEl" style="width: 50px">
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="nex-form-wraper  nex-field-default" style="display:inline-block;">
+	<table id="numberfield-1020" class="x-field x-form-item x-field-default x-form-dirty"
+style="border-width: 0px; table-layout: fixed; width: 320px;" cellspacing="0"
+cellpadding="0">
+    <tbody>
+        <tr id="numberfield-1020-inputRow">
+            <td id="numberfield-1020-labelCell" style="" valign="top" halign="left"
+            width="95">
+                <label id="numberfield-1020-labelEl" for="numberfield-1020-inputEl" class="x-form-item-label x-form-item-label-left"
+                style="width:90px;margin-right:5px;">
+                    Number field:
+                </label>
+            </td>
+            <td class="x-form-item-body " id="numberfield-1020-bodyEl" role="presentation"
+            colspan="2" style="width: 100%;">
+                <table id="numberfield-1020-triggerWrap" class="x-form-trigger-wrap x-unselectable"
+                cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed;">
+                    <tbody>
+                        <tr>
+                            <td id="numberfield-1020-inputCell" rowspan="2" style="width: 100%;">
+                                <input id="numberfield-1020-inputEl" type="text" size="1" name="numberfield1"
+                                value="5" style="width: 200px;" class="x-form-field x-form-text " autocomplete="off"
+                                aria-invalid="false" data-errorqtip="">
+                            </td>
+                            <td style="width:17px" valign="bottom">
+                                <div class="x-trigger-index-0 x-form-trigger x-form-spinner-up role= x-unselectable"
+                                button "=" id="ext-gen1042">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:17px" valign="top">
+                                <div class="x-trigger-index-1 x-form-trigger x-form-spinner-down x-unselectable"
+                                role="button" id="ext-gen1043">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

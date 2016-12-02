@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FORMUI</title>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validator2.js"></script>
+	<script type="text/javascript" src="js/jquery.form.ui.js"></script>
+	<script type="text/javascript" src="js/jquery.form.ui.select.js"></script>
+	<script type="text/javascript" src="js/jquery.form.ui.text.js"></script>
+	<script type="text/javascript" src="js/jquery.form.ui.radio.js"></script>
+	<script type="text/javascript" src="js/jquery.form.ui.spinner.js"></script>
+	<script type="text/javascript" src="js/jquery.form.ui.checkbox.js"></script>
+	<script type="text/javascript" src="js/jquery.form.ui.textarea.js"></script>
+	<script type="text/javascript" src="js/jquery.form.ui.date.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/formui.css">
+	<style type="text/css">
+	</style>
+</head>
+<body style="padding:20px;">	
+<div id="testform" style="border:1px solid red;clear:both; padding:10px; margin:0px;text-align:left;">
+<span class="test" id="t4" data-options="onClick:function(){alert(89)}">d</span> <span style="display:inline-block; height:20px; line-height:20px; margin:0px; vertical-align: top;">ddd</span>
+<span class="test" value="diytest" id="t5">d</span>
+<span class="test" id="t6">d</span>
+<span class="test" id="t7">d</span>
+<span class="test" id="t8">d</span>
+<span class="test" id="t9">d</span>
+<select name="tyt" id="option" disabled="disabled">
+<option value="rt">aaaaaa</option>
+<option  value="rt">aaaaaa</option>
+<option  value="rt3" disabled="disabled">aaaaaa</option>
+<option selected="selected">aaaaaa</option>
+<option>aaaaaa</option>
+<option>aaaaaa</option>
+<option>aaaaaa</option>
+<option>aaaaaa</option>
+<option>aaaaaa</option>
+<option>aaaaaa</option>
+<option>aaaaaa</option><option>aaaaaa</option>
+<option>aaaaaa</option>
+<option>aaaaaa</option>
+<option>aaaaaa</option>
+<option>aaaaaa</option>
+<option>aaaaaa</option>
+<option>aaaaaa</option>
+</select>
+<div><input class="form-text" type="text" name="trs" rules="['required','qq']" value="text-def"/>adf</div>
+<input class="form-text2" type="spinner" name="trs2" rules="['required','qq']" value="text-def"/>
+<div style="width:150px; border:1px solid green; text-align:center;"><input type="radio" value="34" name="sex"  class="radios" id="yui"><label for="yui">radio test</label></div>
+<div><input type="radio" value="3445" name="sex"  checked="checked" class="radios" id="yui2"><label for="yui2">radio test</label></div>
+
+<input type="checkbox" value="1" name="user"  class="checkbox2"  display="block" id="u1"><label for="u1">chck test</label>
+<input type="checkbox" value="2" name="user"  rules="['required']"   display="block" checked="checked" class="checkbox2" id="u2"><label for="u2">chck2 test</label>
+留言<textarea name="textarea" class="textarea" rules="['required']"  display="block" style="width:300px; height:200px;">adf</textarea>
+<div style="clear:both"></div>
+</div>
+<script type="text/javascript">
+var items = [
+{name:'23',value:'item test'},
+{name:'x11z',value:'item test1'},
+{name:'x12z',value:'item test1'},
+{name:'x13z',value:'item test1'},
+{name:'x14z',value:'item test1'},
+{name:'x15z',value:'item test1'},
+{name:'x1z',value:'item test1'},
+{name:'x16z',value:'item test1'},
+{name:'x17z',value:'item test1'},
+{name:'x18z',value:'item test1'},
+{name:'x19z',value:'item test1'},
+{name:'x10z',value:'item test1'},
+{name:'x1sz',value:'item test1'},
+{name:'x1avaz',value:'item test1'},
+{name:'x1asdfaz',value:'item test1'},
+{name:'x1cvdz',value:'item test1'},
+{name:'x1dfaz',value:'item test1'},
+{name:'xcvc2z',selected:true,value:'item test1'}
+]
+var input7 = $("#t6").extform({leftText:'姓名 : ',rules : ['number'],display:'display:block;',renderTo:"#testform",attrs:'',value:'',type:'select',items:items,name:'select',dataFilter:function(val){
+	if( val == 2 ) alert(2);
+}});
+input7.bind("onChange",function( t,oldVal,newVal ){
+//	alert(34);
+});
+input7.bind("onValidError",function(msg){
+	var self = this;
+	$("#"+self.C('id')).find(".ui-form-right-text").html(msg);
+	console.log(msg);
+});
+$("#option,.form-text,.radios,.form-text2,.checkbox2,.textarea").extform();
+
+</script>
+<form id="valid" name="ag">
+<textarea name="pid" required ></textarea>ba
+<input name="yts" id="tsa" required onChange="console.log('changed')"/>te
+</form>
+<button onClick="check();"></button>
+<script type="text/javascript">
+var re;
+function check(){
+re = $("#valid").validate();
+}
+</script>
+</body>
+</html>

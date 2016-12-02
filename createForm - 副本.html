@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FORMUI</title>
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+	<script type="text/javascript" src="js/nex/form/jquery.validator.js"></script>
+	<script type="text/javascript" src="js/nex/form/jquery.nexForm.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/formui.css">
+	
+</head>
+<body>	
+
+
+<div id="myt" style="margin-top:50px; margin-left:50px;"></div>
+
+<script type="text/javascript">
+var text;
+$(function(){
+	text = new Nex.form({
+		type:'textarea',
+		name : 'sex',
+		items : [
+			{name:0,value:'男'},
+			{name:1,value:'女'}
+		],
+		rules : ['number'],
+		renderTo : $("#myt")
+	});
+});
+
+</script>
+</body>
+</html>

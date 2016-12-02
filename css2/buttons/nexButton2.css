@@ -1,0 +1,139 @@
+.nex-btn * {
+    cursor: pointer;
+    cursor: hand; 
+}
+.nex-btn {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-repeat: no-repeat; 
+}
+.nex-btn-default {
+  	padding: 2px;
+ 	background: url(images/button.gif) repeat-x 0px 50%;
+	border: solid 1px #b5afaf;
+}
+.nex-btn-default:hover,
+.nex-btn-default-over {
+	background: #e2f2fe url(images/button/hover.gif) repeat-x 0px 50%;
+	border: solid 1px #80a4d0;
+ }
+ .nex-btn-default button {
+	height:16px;
+}
+.nex-btn button {
+  margin: 0;
+    padding: 0;
+    border: 0;
+    width: auto;
+    background: none;
+    outline: 0 none;
+    overflow: hidden;
+	white-space: nowrap;
+	word-wrap: normal;
+	text-overflow: ellipsis;
+    vertical-align: bottom;
+    -webkit-appearance: none;
+}
+.nex-btn button, .nex-btn a {
+  position: relative; 
+}	
+.nex-btn .nex-btn-wrap {
+    background-repeat: no-repeat;
+	display:inline-block;
+}
+.nex-btn .nex-btn-wrap a {
+      text-decoration: none;
+      display: inline-block;
+      color: inherit; 
+}
+.nex-btn-text {
+  height: 16px;
+  line-height: 16px;
+  font-size: 11px;
+font-weight: normal;
+font-family: tahoma, arial, verdana, sans-serif;
+color: #333333;
+}
+.nex-btn-default .nex-btn-text {
+padding:0 4px;
+}
+.nex-btn-default-icon-left .nex-btn-text {
+  padding-left: 20px;
+}	  
+.nex-btn button .nex-btn-icon,
+.nex-btn a .nex-btn-icon {
+    position: absolute;
+    background-repeat: no-repeat; 
+} 
+.nex-btn-default-icon-left button {
+text-align:left;
+}
+.nex-btn-default-icon-left .nex-btn-icon {
+  width: 16px;
+  height: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: auto;
+} 
+.nex-btn-default .nex-btn-arrow{
+background: transparent no-repeat center;
+width:0px;
+}
+.nex-btn-arrow-right {
+  background: transparent no-repeat center;
+}
+.nex-btn-arrow-right .nex-btn-text {
+    padding-right: 0 !important; 
+}
+.nex-btn-arrow-right .nex-btn-arrow{
+ display:inline-block;
+  width:14px; 
+  height:16px; 
+  line-height:16px;
+   background-image: url('images/arrow.gif');
+ }
+.nex-btn-arrow-bottom { display:inline-block;}
+.nex-btn-arrow-bottom .nex-btn-arrow{
+	display: block;
+	width:100%;/*IE6下的这个100%不是针对父级容器，而是针对一个指定高度的祖先容器*/
+  height:16px; 
+  line-height:16px;
+   background-image: url('images/arrow.gif');
+ }
+.nex-btn-split-right .nex-btn-arrow{
+	display:inline-block;
+	width:12px;
+	margin-left:3px;
+  height:16px; 
+  line-height:16px;
+   background-image: url('images/arrow.gif');
+   background-position:3px center;
+}
+.nex-btn-default:hover .nex-btn-split-right .nex-btn-arrow,
+.nex-btn-default-over .nex-btn-split-right .nex-btn-arrow{
+width:11px;
+border-left : 1px solid #FFBD69;
+background-position:2px center;
+}
+.nex-btn-split-bottom { display:inline-block;}
+.nex-btn-split-bottom .nex-btn-arrow{
+margin-top:2px;
+	display:block;
+	width:100%;/*IE6下的这个100%不是针对父级容器，而是针对一个指定高度的祖先容器*/
+  height:16px; 
+  line-height:16px;
+  background-position:center 4px;
+   background-image: url('images/arrow.gif');
+}
+.nex-btn-default:hover .nex-btn-split-bottom .nex-btn-arrow,
+.nex-btn-default-over .nex-btn-split-bottom .nex-btn-arrow{
+height:15px; 
+  line-height:15px;
+border-top : 1px solid #FFBD69;
+background-position:center 3px;
+}

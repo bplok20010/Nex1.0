@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FORMUI</title>
+	
+</head>
+<body class="">	
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+<script type="text/javascript" src="js/nex/form/jquery.validator.js"></script>
+<script type="text/javascript" src="js/nex/form/jquery.nexForm.js"></script>
+<link rel="stylesheet" type="text/css" href="css/form.debug.css" />
+<div id="myt" style="margin-top:50px; margin-left:50px;"></div>
+<button onClick="text.setLabelText('test')">ddd</button><button onClick="text.setLabelText('test')">ddd</button>
+<script type="text/javascript">
+var text = new Nex.form({
+	type : 'hidden',
+	name : 'name',
+	placeholder : 'nexForm',
+	width : 150,
+	value : 'abc',
+	labelWidth : 80,
+	labelText : 'abc',
+	rules : ['number'],
+	onValidError : function(){
+		console.log('error');
+		},
+	onChange : function(){
+		console.log( this.val() )
+	},
+	renderTo : $("#myt")
+})
+</script>
+<!--<style type="text/css">
+.nex-form-label-cell {}
+
+/* line 87, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
+*:focus {
+  outline: none; }
+.nex-form-item {
+  font: normal 12px tahoma, arial, verdana, sans-serif; }
+  .x-form-item {
+  vertical-align: top;
+  margin-bottom: 5px;
+  table-layout: fixed; } 
+.nex-form-item-label {
+  display: block;
+  padding: 3px 0 0;
+  font-size: 12px;
+  user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  cursor: default; }
+.nex-form-item-label-left { margin-right:5px;}
+.nex-form-text {
+  height: 18px;
+  line-height: 18px;
+  vertical-align: top; }
+  /* line 11, ../themes/stylesheets/ext4/default/widgets/form/_field.scss */
+.nex-form-text,
+textarea.x-form-field {
+  padding: 1px 3px;
+  background: repeat-x 0 0;
+  border: 1px solid;
+  background-color: white;
+  background-image: url('http://127.0.0.1/ext-4.1.0-beta-1/resources/themes/images/default/form/text-bg.gif');
+  border-color: #b5b8c8; }  
+.nex-form-focus,
+textarea.nex-form-focus {
+  border-color: #7eadd9; } 
+
+ .valid-error { border:1px solid red;} 
+ .nex-form-empty-field, textarea.nex-form-empty-field {
+  color: gray; }
+   .nex-form-valid-error .nex-form-field{ border:1px solid red;} 
+</style>-->
+<div class="nex-form-wraper  nex-field-default" >
+	<label for="textfield-1015-inputEl">test</label><table id="textfield-1015" class="nex-field nex-form-item" style="border-width: 0px; table-layout: fixed; width: 320px;" cellspacing="0"
+	cellpadding="0">
+		<tbody>
+			<tr id="textfield-1015-inputRow">
+				<td id="textfield-1015-labelCell" style="" valign="top" halign="left"
+				width="95">
+					<label id="textfield-1015-labelEl" for="textfield-1015-inputEl" class="nex-form-item-label nex-form-item-label-left" style="width:90px;margin-right:5px;">
+						
+					</label>
+				</td>
+				<td class="nex-form-item-body " id="textfield-1015-bodyEl" style="width: 100%;">
+					<input id="textfield-1015-inputEl" type="text"  name=""
+					value="" style="width:167px;" class="nex-form-field nex-form-text" autocomplete="off" >
+				</td>
+				<td id="textfield-1015-bodyEl" style="width: 50px">
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="nex-form-wraper  nex-field-default" style="display:inline-block;">
+	<table id="textfield-1015" class="nex-field nex-form-item" style="border-width: 0px; table-layout: fixed; width: 320px;" cellspacing="0"
+	cellpadding="0">
+		<tbody>
+			<tr id="textfield-1015-inputRow">
+				<td id="textfield-1015-labelCell" style="" valign="top" halign="left"
+				width="95">
+					<label id="textfield-1015-labelEl" for="textfield-1015-inputEl" class="nex-form-item-label nex-form-item-label-left" style="width:90px;margin-right:5px;">
+						
+					</label>
+				</td>
+				<td class="nex-form-item-body " id="textfield-1015-bodyEl" style="width: 100%;">
+					<input id="textfield-1015-inputEl" type="text"  name=""
+					value="" style="width:167px;" class="nex-form-field nex-form-text" autocomplete="off" >
+				</td>
+				<td id="textfield-1015-bodyEl" style="width: 50px">
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,1066 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+<script type="text/javascript" src="js/nex/tabs/jquery.nexTab.js"></script>
+<title>树形插件</title>
+</head>
+<link href="./css/tab/nexTab.css" rel="stylesheet" type="text/css" />
+<body>
+<script type="text/javascript">
+</script>
+<div id="demo1" >
+<div id="tt" class="easyui-tabs nex-tabs-container" style="width: 700px; height: 250px;">
+    <div class="nex-tabs-header" style="width: 698px;">
+        <!--<div class="nex-tabs-float-left nex-tabs-scroller-left" >
+        </div>-->
+        <div class=" nex-tabs-wrap nex-tabs-float-left" style="margin-left: 0px;  margin-right: 0px;">
+            <ul class="nex-tabs-ul">
+				
+                <li class="nex-tabs-selected">
+					<div class="nex-tabs-inner">
+						<span class="nex-tabs-indent nex-tree-icon"></span><span class="nex-tabs-text">node2</span>
+					</div>
+                </li>
+                <li>
+                    <div class="nex-tabs-inner">
+						<span class="nex-tabs-indent nex-tree-icon"></span><span class="nex-tabs-text">node2</span>
+					</div>
+					<a href="javascript:void(0)" class="nex-tabs-close"></a>
+                </li>
+            </ul>
+        </div>
+		<!--<div class="nex-tabs-float-left nex-tabs-scroller-right" >
+        </div>-->
+    </div>
+    <div class="nex-tabs-bodys" style="height: 219px; width: 698px;">
+        <div class="panel" style="display: block; width: 698px;">
+            <div title="" style="padding: 10px; width: 678px; height: 199px;" 
+            class="panel-body panel-body-noheader panel-body-noborder">
+                <p style="font-size:14px">
+                    jQuery EasyUI framework help you build your web page easily.
+                </p>
+                <ul>
+                    <li>
+                        easyui is a collection of user-interface plugin based on jQuery.
+                    </li>
+                    <li>
+                        easyui provides essential functionality for building modem, interactive,
+                        javascript applications.
+                    </li>
+                    <li>
+                        using easyui you don't need to write many javascript code, you usually
+                        defines user-interface by writing some HTML markup.
+                    </li>
+                    <li>
+                        complete framework for HTML5 web page.
+                    </li>
+                    <li>
+                        easyui save your time and scales while developing your products.
+                    </li>
+                    <li>
+                        easyui is very easy but powerful.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel" style="display: none;">
+            <div title="" style="padding:10px" class="panel-body panel-body-noheader panel-body-noborder"
+            id="">
+                <ul class="easyui-tree tree" data-options="url:'../tabs/tree_data1.json',animate:true">
+                    <li>
+                        <div class="tree-node" node-id="1" style="cursor: pointer;">
+                            <span class="tree-hit tree-expanded">
+                            </span>
+                            <span class="tree-icon tree-folder tree-folder-open">
+                            </span>
+                            <span class="tree-title">
+                                My Documents
+                            </span>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="tree-node" node-id="11" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-hit tree-collapsed">
+                                    </span>
+                                    <span class="tree-icon tree-folder">
+                                    </span>
+                                    <span class="tree-title">
+                                        Photos
+                                    </span>
+                                </div>
+                                <ul style="display: none;">
+                                    <li>
+                                        <div class="tree-node" node-id="111" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Friend
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="112" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Wife
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="113" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Company
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="12" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-hit tree-expanded">
+                                    </span>
+                                    <span class="tree-icon tree-folder tree-folder-open">
+                                    </span>
+                                    <span class="tree-title">
+                                        Program Files
+                                    </span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="tree-node" node-id="121" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Intel
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="122" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Java
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="123" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Microsoft Office
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="124" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Games
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="13" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        index.html
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="14" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        about.html
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="15" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        welcome.html
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel" style="display: none;">
+            <div title="" data-options="iconCls:'icon-help',closable:true" style="padding:10px"
+            class="panel-body panel-body-noheader panel-body-noborder" id="">
+                This is the help content.
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="demo2" style="margin-top:5px;" >
+<div id="tt" class="easyui-tabs nex-tabs-container" style="width: 700px; height: 250px;">
+    
+    <div class="nex-tabs-bodys nex-tabs-bodys-top" style="height: 219px; width: 698px;">
+        <div class="panel" style="display: block; width: 698px;">
+            <div title="" style="padding: 10px; width: 678px; height: 199px;" 
+            class="panel-body panel-body-noheader panel-body-noborder">
+                <p style="font-size:14px">
+                    jQuery EasyUI framework help you build your web page easily.
+                </p>
+                <ul>
+                    <li>
+                        easyui is a collection of user-interface plugin based on jQuery.
+                    </li>
+                    <li>
+                        easyui provides essential functionality for building modem, interactive,
+                        javascript applications.
+                    </li>
+                    <li>
+                        using easyui you don't need to write many javascript code, you usually
+                        defines user-interface by writing some HTML markup.
+                    </li>
+                    <li>
+                        complete framework for HTML5 web page.
+                    </li>
+                    <li>
+                        easyui save your time and scales while developing your products.
+                    </li>
+                    <li>
+                        easyui is very easy but powerful.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel" style="display: none;">
+            <div title="" style="padding:10px" class="panel-body panel-body-noheader panel-body-noborder"
+            id="">
+                <ul class="easyui-tree tree" data-options="url:'../tabs/tree_data1.json',animate:true">
+                    <li>
+                        <div class="tree-node" node-id="1" style="cursor: pointer;">
+                            <span class="tree-hit tree-expanded">
+                            </span>
+                            <span class="tree-icon tree-folder tree-folder-open">
+                            </span>
+                            <span class="tree-title">
+                                My Documents
+                            </span>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="tree-node" node-id="11" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-hit tree-collapsed">
+                                    </span>
+                                    <span class="tree-icon tree-folder">
+                                    </span>
+                                    <span class="tree-title">
+                                        Photos
+                                    </span>
+                                </div>
+                                <ul style="display: none;">
+                                    <li>
+                                        <div class="tree-node" node-id="111" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Friend
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="112" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Wife
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="113" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Company
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="12" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-hit tree-expanded">
+                                    </span>
+                                    <span class="tree-icon tree-folder tree-folder-open">
+                                    </span>
+                                    <span class="tree-title">
+                                        Program Files
+                                    </span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="tree-node" node-id="121" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Intel
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="122" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Java
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="123" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Microsoft Office
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="124" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Games
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="13" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        index.html
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="14" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        about.html
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="15" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        welcome.html
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel" style="display: none;">
+            <div title="" data-options="iconCls:'icon-help',closable:true" style="padding:10px"
+            class="panel-body panel-body-noheader panel-body-noborder" id="">
+                This is the help content.
+            </div>
+        </div>
+    </div>
+	<div class="nex-tabs-header nex-tabs-header-bottom" style="width: 698px;">
+        <!--<div class="nex-tabs-float-left nex-tabs-scroller-left" >
+        </div>-->
+        <div class=" nex-tabs-wrap nex-tabs-float-left" style="margin-left: 0px;  margin-right: 0px;">
+            <ul class="nex-tabs-ul">
+				
+                <li class="nex-tabs-selected">
+					<div class="nex-tabs-inner">
+						<span class="nex-tabs-indent nex-tree-icon"></span><span class="nex-tabs-text">node2</span>
+					</div>
+                </li>
+                <li>
+                    <div class="nex-tabs-inner">
+						<span class="nex-tabs-indent nex-tree-icon"></span><span class="nex-tabs-text">node2</span>
+					</div>
+					<a href="javascript:void(0)" class="nex-tabs-close"></a>
+                </li>
+            </ul>
+        </div>
+		<!--<div class="nex-tabs-float-left nex-tabs-scroller-right" >
+        </div>-->
+		<div class="nex-tabs-clear"></div>
+    </div>
+</div>
+</div>
+<div id="demo3" style="margin-top:5px;" >
+<div id="tt" class="easyui-tabs nex-tabs-container" style="width: 700px; height: 250px;">
+    
+	<div class="nex-tabs-header nex-tabs-header-left" style="width: 149px; height: 248px;">
+        <!--<div class="nex-tabs-float-left nex-tabs-scroller-left" >
+        </div>-->
+        <div class=" nex-tabs-wrap" style="margin-left: 0px;  margin-right: 0px;">
+            <ul class="nex-tabs-ul">
+				
+                <li class="nex-tabs-selected">
+					<div class="nex-tabs-inner">
+						<span class="nex-tabs-indent nex-tree-icon"></span><span class="nex-tabs-text">node2</span>
+					</div>
+                </li>
+                <li>
+                    <div class="nex-tabs-inner">
+						<span class="nex-tabs-indent nex-tree-icon"></span><span class="nex-tabs-text">node2</span>
+					</div>
+					<a href="javascript:void(0)" class="nex-tabs-close"></a>
+                </li>
+            </ul>
+        </div>
+		<!--<div class="nex-tabs-float-left nex-tabs-scroller-right" >
+        </div>-->
+		<div class="nex-tabs-clear"></div>
+    </div>
+    <div class="nex-tabs-bodys nex-tabs-bodys-right" style="height: 248px; width: 549px;">
+        <div class="panel" style="display: block; width: 549px;">
+            <div title="" style="padding: 10px; width: 549px; height: 199px;" 
+            class="panel-body panel-body-noheader panel-body-noborder">
+                <p style="font-size:14px">
+                    jQuery EasyUI framework help you build your web page easily.
+                </p>
+                <ul>
+                    <li>
+                        easyui is a collection of user-interface plugin based on jQuery.
+                    </li>
+                    <li>
+                        easyui provides essential functionality for building modem, interactive,
+                        javascript applications.
+                    </li>
+                    <li>
+                        using easyui you don't need to write many javascript code, you usually
+                        defines user-interface by writing some HTML markup.
+                    </li>
+                    <li>
+                        complete framework for HTML5 web page.
+                    </li>
+                    <li>
+                        easyui save your time and scales while developing your products.
+                    </li>
+                    <li>
+                        easyui is very easy but powerful.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel" style="display: none;">
+            <div title="" style="padding:10px" class="panel-body panel-body-noheader panel-body-noborder"
+            id="">
+                <ul class="easyui-tree tree" data-options="url:'../tabs/tree_data1.json',animate:true">
+                    <li>
+                        <div class="tree-node" node-id="1" style="cursor: pointer;">
+                            <span class="tree-hit tree-expanded">
+                            </span>
+                            <span class="tree-icon tree-folder tree-folder-open">
+                            </span>
+                            <span class="tree-title">
+                                My Documents
+                            </span>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="tree-node" node-id="11" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-hit tree-collapsed">
+                                    </span>
+                                    <span class="tree-icon tree-folder">
+                                    </span>
+                                    <span class="tree-title">
+                                        Photos
+                                    </span>
+                                </div>
+                                <ul style="display: none;">
+                                    <li>
+                                        <div class="tree-node" node-id="111" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Friend
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="112" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Wife
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="113" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Company
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="12" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-hit tree-expanded">
+                                    </span>
+                                    <span class="tree-icon tree-folder tree-folder-open">
+                                    </span>
+                                    <span class="tree-title">
+                                        Program Files
+                                    </span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="tree-node" node-id="121" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Intel
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="122" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Java
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="123" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Microsoft Office
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="124" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Games
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="13" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        index.html
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="14" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        about.html
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="15" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        welcome.html
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel" style="display: none;">
+            <div title="" data-options="iconCls:'icon-help',closable:true" style="padding:10px"
+            class="panel-body panel-body-noheader panel-body-noborder" id="">
+                This is the help content.
+            </div>
+        </div>
+    </div>
+	
+</div>
+</div>
+<div id="demo4" style="margin-top:5px;" >
+<div id="tt" class="easyui-tabs nex-tabs-container" style="width: 700px; height: 250px;">
+    
+	<div class="nex-tabs-header nex-tabs-header-right" style="width: 149px; height: 248px;">
+       <!-- <div class="nex-tabs-float-left nex-tabs-scroller-left" >
+        </div>-->
+        <div class=" nex-tabs-wrap" style="margin-left: 0px;  margin-right: 0px;">
+            <ul class="nex-tabs-ul">
+				
+                <li class="nex-tabs-selected">
+					<div class="nex-tabs-inner">
+						<span class="nex-tabs-indent nex-tree-icon"></span><span class="nex-tabs-text">node2</span>
+					</div>
+                </li>
+                <li>
+                    <div class="nex-tabs-inner">
+						<span class="nex-tabs-indent nex-tree-icon"></span><span class="nex-tabs-text">node2</span>
+					</div>
+					<a href="javascript:void(0)" class="nex-tabs-close"></a>
+                </li>
+            </ul>
+        </div>
+		<!--<div class="nex-tabs-float-left nex-tabs-scroller-right" >
+        </div>-->
+		<div class="nex-tabs-clear"></div>
+    </div>
+    <div class="nex-tabs-bodys nex-tabs-bodys-left" style="height: 248px; width: 549px;">
+        <div class="panel" style="display: block; width: 549px;">
+            <div title="" style="padding: 10px; width: 549px; height: 199px;" 
+            class="panel-body panel-body-noheader panel-body-noborder">
+                <p style="font-size:14px">
+                    jQuery EasyUI framework help you build your web page easily.
+                </p>
+                <ul>
+                    <li>
+                        easyui is a collection of user-interface plugin based on jQuery.
+                    </li>
+                    <li>
+                        easyui provides essential functionality for building modem, interactive,
+                        javascript applications.
+                    </li>
+                    <li>
+                        using easyui you don't need to write many javascript code, you usually
+                        defines user-interface by writing some HTML markup.
+                    </li>
+                    <li>
+                        complete framework for HTML5 web page.
+                    </li>
+                    <li>
+                        easyui save your time and scales while developing your products.
+                    </li>
+                    <li>
+                        easyui is very easy but powerful.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel" style="display: none;">
+            <div title="" style="padding:10px" class="panel-body panel-body-noheader panel-body-noborder"
+            id="">
+                <ul class="easyui-tree tree" data-options="url:'../tabs/tree_data1.json',animate:true">
+                    <li>
+                        <div class="tree-node" node-id="1" style="cursor: pointer;">
+                            <span class="tree-hit tree-expanded">
+                            </span>
+                            <span class="tree-icon tree-folder tree-folder-open">
+                            </span>
+                            <span class="tree-title">
+                                My Documents
+                            </span>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="tree-node" node-id="11" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-hit tree-collapsed">
+                                    </span>
+                                    <span class="tree-icon tree-folder">
+                                    </span>
+                                    <span class="tree-title">
+                                        Photos
+                                    </span>
+                                </div>
+                                <ul style="display: none;">
+                                    <li>
+                                        <div class="tree-node" node-id="111" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Friend
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="112" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Wife
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="113" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Company
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="12" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-hit tree-expanded">
+                                    </span>
+                                    <span class="tree-icon tree-folder tree-folder-open">
+                                    </span>
+                                    <span class="tree-title">
+                                        Program Files
+                                    </span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="tree-node" node-id="121" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Intel
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="122" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Java
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="123" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Microsoft Office
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tree-node" node-id="124" style="cursor: pointer;">
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-indent">
+                                            </span>
+                                            <span class="tree-icon tree-file">
+                                            </span>
+                                            <span class="tree-title">
+                                                Games
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="13" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        index.html
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="14" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        about.html
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tree-node" node-id="15" style="cursor: pointer;">
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-indent">
+                                    </span>
+                                    <span class="tree-icon tree-file">
+                                    </span>
+                                    <span class="tree-title">
+                                        welcome.html
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel" style="display: none;">
+            <div title="" data-options="iconCls:'icon-help',closable:true" style="padding:10px"
+            class="panel-body panel-body-noheader panel-body-noborder" id="">
+                This is the help content.
+            </div>
+        </div>
+    </div>
+	
+</div>
+</div>
+<style type="text/css">
+.test1 li {
+
+display:inline-block !important;
+float:left;
+}
+</style>
+<div style="width:600px; height:600px; margin:5px; border:1px solid #FFF" id="tabs"></div>
+<script type="text/javascript">
+var g = new Nex.tabs({renderTo:'#tabs'});
+</script>
+</body>
+</html>

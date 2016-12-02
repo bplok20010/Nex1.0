@@ -1,0 +1,136 @@
+.nex-btn:focus { outline: none; }
+.nex-btn:visited {}
+.nex-btn:hover { _background: none;}
+.nex-btn:active { }
+.nex-btn {
+display:inline-block;
+vertical-align:top;
+color:#000;
+text-decoration:none; 
+outline: 0 none; 
+font-family: "微软雅黑",Arial, Helvetica, sans-serif;
+font-size:12px;
+_font-size:11px;
+margin:0 0 0 5px;
+cursor: pointer;
+position:relative;
+}
+.nex-btn-wraper {
+position:relative;
+display:inline-block;
+vertical-align:middle;
+padding:0 4px;
+color: #444;
+background: #fafafa;
+background-repeat: no-repeat;
+border: 1px solid #bbb;
+background: -webkit-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+background: -moz-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+background: -o-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+background: linear-gradient(to bottom,#ffffff 0,#eeeeee 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#eeeeee,GradientType=0);
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+border-radius:3px;
+}
+
+.nex-btn-disabled span {
+opacity: 0.7;
+filter: alpha(opacity=70);
+}
+.nex-btn-disabled .nex-btn-wraper{
+color:#ACA899 !important;
+cursor:default !important;
+}
+.nex-btn-plain .nex-btn-wraper{
+border:none;
+background:none;
+filter : none;
+padding:1px 5px;
+}
+
+.nex-btn:hover .nex-btn-wraper,
+.nex-btn-focus .nex-btn-wraper,
+.nex-btn-pressed .nex-btn-wraper,
+.nex-btn-over .nex-btn-wraper
+ {
+background: #eaf2ff;
+color: #000000;
+border: 1px solid #b7d2ff;
+filter: none;
+padding:0 4px;
+}
+.nex-btn-active .nex-btn-wraper{
+background: #eaf2ff;
+color: #000000;
+border: 1px solid #b7d2ff;
+filter: none;
+padding:0 4px;
+}
+.nex-btn-disabled:hover .nex-btn-wraper{
+color:#ACA899 !important;
+border: 1px solid #bbb;
+background: #fafafa;
+background: -webkit-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+background: -moz-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+background: -o-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+background: linear-gradient(to bottom,#ffffff 0,#eeeeee 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#eeeeee,GradientType=0);
+opacity: 0.7;
+filter: alpha(opacity=70);
+}
+.nex-btn-inner {
+	padding:2px 0; /*可通过设置padding 来修改按钮高度*/
+	height:18px; 
+	line-height:18px;
+	display:inline-block;
+	vertical-align:middle;
+	background-position:center;
+	background-repeat:no-repeat;
+ }
+.nex-btn-icon,
+.nex-btn-arrow { 
+	width:16px;
+	margin-right:3px;
+}
+.nex-btn-arrow {
+margin-left:3px;
+margin-right:0px;
+width:8px;
+background:url(images/arrow.gif) no-repeat center;
+}
+.nex-btn-sep{ 
+width:1px;
+margin-left:3px;
+}
+.nex-btn-disabled:hover .nex-btn-sep{
+background:#CFCFCF !important;
+}
+.nex-btn:hover .nex-btn-sep,
+.nex-btn-focus .nex-btn-sep,
+.nex-btn-pressed .nex-btn-sep,
+.nex-btn-over .nex-btn-sep{
+background:#b7d2ff;
+}
+
+.nex-btn-split .nex-btn-wraper{
+padding-right:0px !important;
+}
+.nex-btn-split .nex-btn-arrow{
+margin:0px;
+padding-left: 3px;
+padding-right: 3px;
+}
+/* file */
+.nex-btn-file-input:focus { outline:0;}
+.nex-btn-file .nex-btn-wraper { overflow:hidden;}
+.nex-btn-file .nex-btn-inner{
+*vertical-align:top;
+}
+.nex-btn-file-input {
+position: absolute;
+right: -2px;
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+opacity: 0;
+font-size: 100px;
+}

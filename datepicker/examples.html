@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="copyright" content="R. Schoo" />
+	
+	<link rel="stylesheet" media="screen" href="styles/vlaCal-v2.1.css" type="text/css" />
+	
+	<!-- You could also include the uncompressed versions for developing purposes:
+	<script type="text/javascript" src="jslib/mootools-1.2-core.js"></script>
+	<script type="text/javascript" src="jslib/vlaCal-v2.1.js"></script>-->
+	
+	<title>Vista-Like Ajax Calendar version 2.1.1 - Examples</title>
+	
+	<style>
+	body {
+		cursor: default;
+		text-align: left;
+		font-family: calibri, arial, sans-serif;
+		font-size: 13px;
+		margin: 0;
+		padding: 5px;
+	}
+	
+	table th {
+		vertical-align: top;
+	}
+
+	input {
+		text-align: center;
+		font-family: calibri, arial, sans-serif;
+		font-size: 13px;
+		background-color: white;
+		border: 1px solid;
+		border-color: #abadb3 #dbdfe6 #e3e9ef #e2e3ea;
+		padding: 2px;
+	}
+	input:focus, input:hover  {
+		border-color: #5794bf #b7d5ea #c7e2f1 #c5daed;
+	}
+
+	.pickerImg {
+		position: absolute;
+		margin-left: -16px;
+		margin-top: 5px;
+		cursor: pointer;
+	}
+	.infoBox {
+		background-color: #fefdec;
+		border: 1px solid #edebcd;
+		padding: 6px;
+		margin-bottom: 20px;
+	}
+	</style>
+	
+
+</head>
+<body>
+<div class="vlaCalendarPicker" style="top: 73px; left: 195px; visibility: visible; zoom: 1; opacity: 1; display: inline;"><div class="pickerBackground"><div class="vlaCalendar">
+	<span class="indication">
+		<div class="arrowRight" style="visibility: visible;"></div>
+		<div class="arrowLeft" style="visibility: visible;"></div>
+		<span class="label" date="{'day': '31', 'month': '10', 'year': '2013'}">2013</span>
+	</span>
+	<div class="container">
+		<div class="loaderB" style="visibility: visible; zoom: 1; opacity: 1; margin-left: 0px;"><table class="year" cellpadding="0" summary="{'ts': '1372640461', 'pr_ts': '1325379661', 'nx_ts': '1388538061', 'label': '2013', 'current': 'year', 
+	'parent': 'decade'}">
+	<tbody><tr><td ts="1357002061" class="">Jan</td><td ts="1359680461" class="current">Feb</td><td ts="1362099661" class="">Mar</td><td ts="1364778061" class="">Apr</td></tr>
+	<tr><td ts="1367370061" class="">May</td><td ts="1370048461" class="">Jun</td><td ts="1372640461" class="selected">Jul</td><td ts="1375318861" class="">Aug</td></tr>
+	<tr><td ts="1377997261" class="">Sep</td><td ts="1380589261" class="">Oct</td><td ts="1383267661" class="">Nov</td><td ts="1385859661" class="">Dec</td></tr>
+</tbody></table></div>
+		<div class="loaderA" style="visibility: visible; zoom: 1; opacity: 1; margin-left: -999px;"><table class="month picker" cellpadding="0" summary="{'ts': '1372640461', 'pr_ts': '1370048461', 'nx_ts': '1375318861', 'label': 'July, 2013', 
+	'current': 'month', 'parent': 'year'}">
+	<tbody><tr>
+		<th>Su</th>
+		<th>Mo</th>
+		<th>Tu</th>
+		<th>We</th>
+		<th>Th</th>
+		<th>Fr</th>
+		<th>Sa</th>
+			</tr>
+	<tr class="firstRow"><td class="outsideDay" date="{'day': '30', 'month': '6', 'year': '2013'}">30</td><td date="{'day': '1', 'month': '7', 'year': '2013'}">1</td><td date="{'day': '2', 'month': '7', 'year': '2013'}">2</td><td date="{'day': '3', 'month': '7', 'year': '2013'}">3</td><td date="{'day': '4', 'month': '7', 'year': '2013'}">4</td><td date="{'day': '5', 'month': '7', 'year': '2013'}">5</td><td date="{'day': '6', 'month': '7', 'year': '2013'}">6</td></tr>
+	<tr><td date="{'day': '7', 'month': '7', 'year': '2013'}">7</td><td date="{'day': '8', 'month': '7', 'year': '2013'}">8</td><td date="{'day': '9', 'month': '7', 'year': '2013'}">9</td><td date="{'day': '10', 'month': '7', 'year': '2013'}">10</td><td date="{'day': '11', 'month': '7', 'year': '2013'}">11</td><td date="{'day': '12', 'month': '7', 'year': '2013'}">12</td><td date="{'day': '13', 'month': '7', 'year': '2013'}">13</td></tr>
+	<tr><td date="{'day': '14', 'month': '7', 'year': '2013'}">14</td><td date="{'day': '15', 'month': '7', 'year': '2013'}">15</td><td date="{'day': '16', 'month': '7', 'year': '2013'}">16</td><td date="{'day': '17', 'month': '7', 'year': '2013'}">17</td><td date="{'day': '18', 'month': '7', 'year': '2013'}">18</td><td date="{'day': '19', 'month': '7', 'year': '2013'}">19</td><td date="{'day': '20', 'month': '7', 'year': '2013'}">20</td></tr>
+	<tr><td date="{'day': '21', 'month': '7', 'year': '2013'}">21</td><td date="{'day': '22', 'month': '7', 'year': '2013'}">22</td><td date="{'day': '23', 'month': '7', 'year': '2013'}">23</td><td date="{'day': '24', 'month': '7', 'year': '2013'}">24</td><td date="{'day': '25', 'month': '7', 'year': '2013'}">25</td><td date="{'day': '26', 'month': '7', 'year': '2013'}">26</td><td date="{'day': '27', 'month': '7', 'year': '2013'}">27</td></tr>
+	<tr><td date="{'day': '28', 'month': '7', 'year': '2013'}">28</td><td date="{'day': '29', 'month': '7', 'year': '2013'}">29</td><td date="{'day': '30', 'month': '7', 'year': '2013'}">30</td><td date="{'day': '31', 'month': '7', 'year': '2013'}">31</td><td class="outsideDay" date="{'day': '1', 'month': '8', 'year': '2013'}">1</td><td class="outsideDay" date="{'day': '2', 'month': '8', 'year': '2013'}">2</td><td class="outsideDay" date="{'day': '3', 'month': '8', 'year': '2013'}">3</td></tr>
+	<tr><td class="outsideDay" date="{'day': '4', 'month': '8', 'year': '2013'}">4</td><td class="outsideDay" date="{'day': '5', 'month': '8', 'year': '2013'}">5</td><td class="outsideDay" date="{'day': '6', 'month': '8', 'year': '2013'}">6</td><td class="outsideDay" date="{'day': '7', 'month': '8', 'year': '2013'}">7</td><td class="outsideDay" date="{'day': '8', 'month': '8', 'year': '2013'}">8</td><td class="outsideDay" date="{'day': '9', 'month': '8', 'year': '2013'}">9</td><td class="outsideDay" date="{'day': '10', 'month': '8', 'year': '2013'}">10</td></tr>
+	<tr></tr>
+</tbody></table></div>
+	</div>
+</div>
+</div></div>
+<div class="vlaCalendarPicker" style="top: 73px; left: 495px; visibility: visible; zoom: 1; opacity: 1; display: inline;"><div class="pickerBackground"><div class="vlaCalendar">
+	<span class="indication">
+		<div class="arrowRight" style="visibility: visible;"></div>
+		<div class="arrowLeft" style="visibility: visible;"></div>
+		<span class="label" date="{'day': '31', 'month': '10', 'year': '2013'}">July, 2013</span>
+	</span>
+	<div class="container">
+		<div class="loaderB" style="visibility: visible; zoom: 1; opacity: 1; margin-left: -999px;"><table class="year" cellpadding="0" summary="{'ts': '1359680461', 'pr_ts': '1325379661', 'nx_ts': '1388538061', 'label': '2013', 'current': 'year', 
+	'parent': 'decade'}">
+	<tbody><tr><td ts="1357002061" class="">Jan</td><td ts="1359680461" class="selectedcurrent">Feb</td><td ts="1362099661" class="">Mar</td><td ts="1364778061" class="">Apr</td></tr>
+	<tr><td ts="1367370061" class="">May</td><td ts="1370048461" class="">Jun</td><td ts="1372640461" class="">Jul</td><td ts="1375318861" class="">Aug</td></tr>
+	<tr><td ts="1377997261" class="">Sep</td><td ts="1380589261" class="">Oct</td><td ts="1383267661" class="">Nov</td><td ts="1385859661" class="">Dec</td></tr>
+</tbody></table></div>
+		<div class="loaderA" style="visibility: visible; zoom: 1; opacity: 1; margin-left: 0px;"><table class="month picker" cellpadding="0" summary="{'ts': '1372640461', 'pr_ts': '1370048461', 'nx_ts': '1375318861', 'label': 'July, 2013', 
+	'current': 'month', 'parent': 'year'}">
+	<tbody><tr>
+		<th>Su</th>
+		<th>Mo</th>
+		<th>Tu</th>
+		<th>We</th>
+		<th>Th</th>
+		<th>Fr</th>
+		<th>Sa</th>
+			</tr>
+	<tr class="firstRow"><td class="outsideDay" date="{'day': '30', 'month': '6', 'year': '2013'}">30</td><td date="{'day': '1', 'month': '7', 'year': '2013'}">1</td><td date="{'day': '2', 'month': '7', 'year': '2013'}">2</td><td date="{'day': '3', 'month': '7', 'year': '2013'}">3</td><td date="{'day': '4', 'month': '7', 'year': '2013'}">4</td><td date="{'day': '5', 'month': '7', 'year': '2013'}">5</td><td date="{'day': '6', 'month': '7', 'year': '2013'}">6</td></tr>
+	<tr><td date="{'day': '7', 'month': '7', 'year': '2013'}">7</td><td date="{'day': '8', 'month': '7', 'year': '2013'}">8</td><td date="{'day': '9', 'month': '7', 'year': '2013'}">9</td><td date="{'day': '10', 'month': '7', 'year': '2013'}">10</td><td date="{'day': '11', 'month': '7', 'year': '2013'}">11</td><td date="{'day': '12', 'month': '7', 'year': '2013'}">12</td><td date="{'day': '13', 'month': '7', 'year': '2013'}">13</td></tr>
+	<tr><td date="{'day': '14', 'month': '7', 'year': '2013'}">14</td><td date="{'day': '15', 'month': '7', 'year': '2013'}">15</td><td date="{'day': '16', 'month': '7', 'year': '2013'}">16</td><td date="{'day': '17', 'month': '7', 'year': '2013'}">17</td><td date="{'day': '18', 'month': '7', 'year': '2013'}">18</td><td date="{'day': '19', 'month': '7', 'year': '2013'}">19</td><td date="{'day': '20', 'month': '7', 'year': '2013'}">20</td></tr>
+	<tr><td date="{'day': '21', 'month': '7', 'year': '2013'}">21</td><td date="{'day': '22', 'month': '7', 'year': '2013'}">22</td><td date="{'day': '23', 'month': '7', 'year': '2013'}">23</td><td date="{'day': '24', 'month': '7', 'year': '2013'}">24</td><td date="{'day': '25', 'month': '7', 'year': '2013'}">25</td><td date="{'day': '26', 'month': '7', 'year': '2013'}">26</td><td date="{'day': '27', 'month': '7', 'year': '2013'}">27</td></tr>
+	<tr><td date="{'day': '28', 'month': '7', 'year': '2013'}">28</td><td date="{'day': '29', 'month': '7', 'year': '2013'}">29</td><td date="{'day': '30', 'month': '7', 'year': '2013'}">30</td><td date="{'day': '31', 'month': '7', 'year': '2013'}">31</td><td class="outsideDay" date="{'day': '1', 'month': '8', 'year': '2013'}">1</td><td class="outsideDay" date="{'day': '2', 'month': '8', 'year': '2013'}">2</td><td class="outsideDay" date="{'day': '3', 'month': '8', 'year': '2013'}">3</td></tr>
+	<tr><td class="outsideDay" date="{'day': '4', 'month': '8', 'year': '2013'}">4</td><td class="outsideDay" date="{'day': '5', 'month': '8', 'year': '2013'}">5</td><td class="outsideDay" date="{'day': '6', 'month': '8', 'year': '2013'}">6</td><td class="outsideDay" date="{'day': '7', 'month': '8', 'year': '2013'}">7</td><td class="outsideDay" date="{'day': '8', 'month': '8', 'year': '2013'}">8</td><td class="outsideDay" date="{'day': '9', 'month': '8', 'year': '2013'}">9</td><td class="outsideDay" date="{'day': '10', 'month': '8', 'year': '2013'}">10</td></tr>
+	<tr></tr>
+</tbody></table></div>
+	</div>
+</div>
+</div></div>
+</body>
+</html>

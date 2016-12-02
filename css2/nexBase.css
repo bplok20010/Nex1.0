@@ -1,0 +1,19 @@
+.nex-html {
+margin:0px;
+padding:0px;
+font-size:12px;
+font-family:"微软雅黑",Arial, Helvetica, sans-serif;
+overflow:hidden;
+position:relative;
+outline:none;
+}
+.nex-html-auto-scroll { overflow:auto;}
+.nex-hidden {
+	position: absolute !important;
+	top:-1000000px !important;
+	left:-1000000px !important;
+}
+.nex-noscroll,.nex-overflow-hidden {
+	overflow:hidden !important;
+	_overflow:hidden;
+}

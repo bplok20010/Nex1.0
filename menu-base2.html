@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+<script type="text/javascript" src="js/nex/showat/jquery.nexShowAt.js"></script>
+<script type="text/javascript" src="js/nex/menu/jquery.nexMenu2.js"></script>
+<script type="text/javascript" async="" src="http://getfirebug.com/firebug-lite-beta.js"></script>
+<title>Menu</title>
+</head>
+<link href="./css/menu/nexMenu.css" rel="stylesheet" type="text/css" />
+<body>
+<style type="text/css">
+body {
+    font-family:helvetica,tahoma,verdana,sans-serif;
+    font-size:13px;
+    margin:0;
+}
+</style>
+<div style="position:relative;">1</div>
+<div>2</div>
+<div id="demo1" style="width:40%">
+<div style="filter: alpha(opacity=12); background:#000; width:auto;">标准数据</div>
+</div>
+
+<script type="text/javascript">
+//$("#demo").nexTree({....});
+var datas = [
+	{text:'新增...',disabled:true,callBack:function(){alert(4)}},
+	{text:'缩进...',disabled:true,icon : '/ajax.uchome/Nex/css/tree/images/folder.gif',
+		items:[
+			{text:'cddddddffffffffffffffffffffffffddddddddddddddddddddddddddddddddddffddddd',icon : '/ajax.uchome/Nex/css/tree/images/folder.gif'},
+			{text:'d',callBack:function(){alert(4)}},
+			{text:'e'},
+			{text:'f'}
+		]
+	},
+	{text:'g',items:[
+			{text:'cddddddddddd',icon : '/ajax.uchome/Nex/css/tree/images/folder.gif'},
+			{text:'d',callBack:function(){alert(4)}},
+			{text:'e'},
+			{text:'f'}
+		]},
+	{text:'h',items:[
+			{text:'cddddddddddd',icon : '/ajax.uchome/Nex/css/tree/images/folder.gif'},
+			{text:'d',items:[
+			{text:'cddddddddddd',icon : '/ajax.uchome/Nex/css/tree/images/folder.gif'},
+			{text:'d'},
+			{text:'e'},
+			{text:'f'}
+		]},
+			{text:'e'},
+			{text:'f'}
+		]},
+	{text:'i'},
+	{text:'j'},
+	{text:'k'},
+	{text:'l'}
+];
+var tree1 = new Nex.menu({data:datas});
+$(document).bind({
+	contextmenu : function(e){
+		tree1.hideAllMenu(undefined,0);
+		var menu = tree1.createMenu();
+		//tree1.showAt( menu,{left:e.pageX,top:e.pageY},{xAlign:'left',yAlign:'bottom',zAlign:'y'} );
+		return false;
+	}
+});
+</script><!--
+<div class="nex-menu " style=" display: block; top:30px;"><div class="nex-menu-line-v"></div>ddddddddddddd<div id="nexmenu-1_menu_2_item" menuid="menu_2" class="nex-menu-item nex-menu-first nex-menu-first-all nex-menu-item-disabled"><span class="nex-menu-icon " style=""></span><span class="nex-menu-title">新增...</span></div></div>
+<div id="nexmenu-1_0"  class="nex-menu " style=" display: block; top:3px;"><div class="nex-menu-line-v"></div><div id="nexmenu-1_menu_2_item" menuid="menu_2" class="nex-menu-item nex-menu-first nex-menu-first-all nex-menu-item-disabled"><span class="nex-menu-icon " style=""></span><span class="nex-menu-title">新增...</span></div></div>-->
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+<script type="text/javascript" src="js/nex/tree/jquery.nexTree.js"></script>
+<script type="text/javascript" src="js/nex/tree/jquery.nexTree.checkbox.js"></script>
+<script type="text/javascript" src="js/nex/tree/jquery.nexTree.toTree.js"></script>
+<title>树形插件</title>
+</head>
+<link href="./css/tree/nexTree.css" rel="stylesheet" type="text/css" />
+<body>
+<div id="demo1" style="width:40%">
+<div>ajax1</div>
+</div>
+<div id="demo2" style="width:40%">
+<div>ajax2</div>
+</div>
+<script type="text/javascript">
+var datas = [
+	{text:'a',leaf:false},
+	{text:'b',
+		children:[
+			{text:'c',leaf:false},
+			{text:'d'},
+			{text:'e'},
+			{text:'f'}
+		]
+	},
+	{text:'g',leaf:false},
+	{text:'h'},
+	{text:'i'},
+	{text:'j'},
+	{text:'k'},
+	{text:'l'}
+];
+var tree1 = new Nex.tree({renderTo:'#demo1',url:'data.json',data:datas,onClick:function(li,tid,d){
+	//if( this.isLeaf(tid) ) alert(d.text)
+}});
+var datas2 = [
+	{id:1,text:'a'},
+	{id:2,text:'b',pid:1},
+	{id:3,text:'c',pid:2},
+	{id:4,text:'d',pid:3},
+	{id:5,text:'e',pid:3},
+	{id:'a1',text:'1',pid:4},
+	{id:'a2',text:'2',pid:'a1'},
+	{id:'a3',text:'3',pid:'a2'},
+	{id:'a4',text:'4',pid:'a3'},
+	{id:'a5',text:'5',pid:'a4'},
+	{id:'a6',text:'6',pid:'a5'},
+	{id:'a7',text:'7',pid:'a6'},
+	{id:'a8',text:'8',pid:'a7'},
+	{id:'a9',text:'9',pid:'a8'},
+	{id:6,text:'无限分级',leaf:0},
+	{id:7,text:'g'},
+	{id:8,text:'h'}
+];
+var tree2 = new Nex.tree({renderTo:'#demo2',data:datas2,url:function(opt,success,error){return [{text:'无限分级',leaf:0},{text:'more'}]},simpleData:true});
+</script>
+</body>
+</html>

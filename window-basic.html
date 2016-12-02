@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Window</title>
+<link href="css/window/nexWindow.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/nex/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexHtml.js"></script>
+<script type="text/javascript" src="js/nex/window/jquery.nexWindow.js"></script>
+</head>
+<body style="margin:0px;">
+	<div class="nex-window" style="display: block; width: 238px; left: 125px; top: 75px; z-index: 9002;">
+		<div class="nex-window-header" style="width: 238px;">
+			<div class="nex-window-title" style="">
+				<span>Inline Window</span>
+				<div class="nex-window-tool">
+					<a class="nex-window-collapse-icon" href="javascript:void(0)"></a><a class="nex-window-min-icon" href="javascript:void(0)"></a><a class="nex-window-max-icon" href="javascript:void(0)"></a><a class="nex-window-close-icon" href="javascript:void(0)"></a>
+				</div>
+			</div>
+		</div>
+		<div class=" nex-window-body" style="width: 216px; height: 94px; padding: 10px;" title="">
+			This window stay inside its parent
+		</div>
+	</div>
+<script type="text/javascript">
+$(function(){
+	//Nex.Create('window',{});
+	var win = new Nex.window({width:'50%',height:'50%',title:'Hello World!',closeAble:true,toolsItems:'test',headerItems:'<div style="height:15px;">------</div>',footerItems:'<div style="height:15px;">+++++++++++</div>'});
+});
+</script>	
+</body>
+</html>

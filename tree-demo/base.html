@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+<script type="text/javascript" src="js/nex/tree/jquery.nexTree.js"></script>
+<script type="text/javascript" src="js/nex/tree/jquery.nexTree.checkbox.js"></script>
+<script type="text/javascript" src="js/nex/tree/jquery.nexTree.toTree.js"></script>
+<script type="text/javascript" src="js/nex/showAt/jquery.nexShowAt.js"></script>
+<title>无标题文档</title>
+</head>
+
+<body>
+
+<link href="./css/tree/nexTree.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+
+.nex-tree2 { width:400px;}
+</style>
+<ul class="nex-tree2" id="totree">
+    <li>
+       <span class="nex-tree-title">My Docume</span>
+        <ul>
+            
+        </ul>
+		<li >
+               <span class="nex-tree-title">about.html</span>
+            </li>
+            <li open="true">
+                <span class="tree-title">
+                       <a href="www.qq.com" target="_blank"> welcome.html</a>
+                    </span>
+					
+            </li>
+			<li open="true">
+                <span class="tree-title">
+                        welcome.html
+                    </span>
+					
+            </li>
+			<li open="true">
+                <span class="tree-title">
+                        welcome.html
+                    </span>
+					
+            </li>
+			<li open="true">
+                <span class="tree-title">
+                        welcome.html
+                    </span>
+					
+            </li>
+    </li>
+</ul>
+<div style="border:1px solid green;" id="atree"></div>
+<div id="test" style="width:400px; ; padding:5px; border:1px solid red; overflow:auto"></div>
+<div id="test2" style="width:400px; height:150px; padding:0px; overflow: hidden; position:relative; margin-top:100px;">
+	
+</div>
+<div id="test3" style="margin:0px; padding:0px; height:50px; width:50px; position:absolute;  border:1px solid green;">adfa</div>
+<div style="background:url(http://127.0.0.1/ext-4.1.0-beta-1/resources/themes/images/default/tree/loading.gif); width:40px; height:40px;"></div>
+<script type="text/javascript">
+$("#totree").toTree({renderTo : '#atree',simpleSelect:true});
+//children
+var trees = [
+	
+	{text:'node3',id:3,leaf:false},
+	{text:'node4',id:4},
+	{text:'node5',id:5},
+	{text:'node6',id:6},
+	{text:'node7',id:7},
+	{text:'node8',id:8},
+	{text:'node2',id:2,children:[{text:'node2',id:9}]},
+	
+	{text:'node56',id:1,children : [
+		{text:'node2',id:10,open:true,children:[{text:'node2',id:13},{text:'node2',open:true,id:25,children:[{text:'node2',id:49}]},{text:'node2',id:12}]}
+	]}
+];
+var data = {};
+
+function map_tree(_data,pid){
+	var undef;
+	for( var i=0;i<_data.length;i++ ) {
+		var node = _data[i];
+		node['_level'] = pid === undef ? 0 : data[pid]['_level']+1;
+		node['_parent'] = pid === undef ? null : pid;
+		data[ node['id'] ] = node; 
+		if( ( 'childs' in node ) && node['childs'].length ) {
+			map_tree(node['childs'],node['id']);
+		}
+	}
+};
+var tree = new Nex.tree({renderTo:'#test',simpleSelect:true,showParentCheckBoxButton:false,url:getData,data:trees,onDblClick:function(th,tid){
+
+}});
+var tree2 = new Nex.tree({renderTo:'#test',expandOnLoad:false,url:'http://127.0.0.1/jquery-puglins/zTree/node2.php',simpleData:true,onDblClick:function(th,tid){
+
+}});
+var sid = 100;
+function getData(tid,func){
+setTimeout(function(){
+	func([{text:'node37',id:45},{text:'node47',id:47,children:[{text:'node2',children:[{text:'node23',children:[{text:'node47',children:[{text:'node47',children:[{text:'node47',children:[{text:'node47',children:[{text:'node47',children:[{text:'node47',children:[{text:'node47',id:sid++}],id:sid++}],id:sid++}],id:sid++}],id:sid++}],id:sid++}],id:sid++}],id:sid++}],id:sid++}]},{text:'node47',id:50},{text:'node47',id:sid++},{text:'node47',id:sid++},{text:'node47',id:sid++},{text:'node47',id:sid++},{text:'node47',id:sid++},{text:'node47',id:sid++},{text:'node47',id:sid++}]);
+},100)
+
+}
+//("#test").bind("selectstart",function(){return false;})
+function showPos(){
+	var s = new Nex.showAt({source:'#test3',el:'#btn',xAlign:'right',yAlign:'bottom',zAlign:'x',offsetX:-5,offsetY:0});
+	$("#test3").offset(s.getShowPos());
+};
+</script>
+
+<button style="margin-top:50px; margin-bottom:100px; margin-left:1000px; margin-right:200px;" id="btn" onclick="showPos();">显示</button>
+
+</body>
+</html>

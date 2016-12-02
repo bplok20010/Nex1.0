@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+<script type="text/javascript" src="js/nex/tree/jquery.nexTree.js"></script>
+<title>无标题文档</title>
+<style type="text/css">
+.nex-toolbar{
+overflow: hidden;
+zoom: 1;
+font-size: 11px;
+border: 1px solid;
+padding: 2px 0 2px 2px;
+
+
+border-color: #99bce8;
+background-image: none;
+background-color: #d3e1f1;
+background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dfe9f5), color-stop(100%, #d3e1f1));
+background-image: -webkit-linear-gradient(top, #dfe9f5, #d3e1f1);
+background-image: -moz-linear-gradient(top, #dfe9f5, #d3e1f1);
+background-image: -o-linear-gradient(top, #dfe9f5, #d3e1f1);
+background-image: -ms-linear-gradient(top, #dfe9f5, #d3e1f1);
+background-image: linear-gradient(top, #dfe9f5, #d3e1f1);
+}
+.nex-btn {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  position: relative;
+  cursor: pointer;
+  cursor: hand;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-repeat: no-repeat; 
+}
+.nex-btn-default {
+-moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  padding: 3px;
+  
+  background-color: transparent;
+}
+.nex-btn-default button {
+height:16px;
+}
+.nex-btn-default:hover {
+  border-color: #CCC; 
+  border-width: 1px;
+   padding: 2px;
+  border-style: solid;
+ }
+.nex-btn * {
+    cursor: pointer;
+    cursor: hand; 
+}
+.nex-btn em {
+    background-repeat: no-repeat; }
+    /* line 30, ../themes/stylesheets/ext4/default/widgets/_button.scss */
+.nex-btn em a {
+      text-decoration: none;
+      display: inline-block;
+      color: inherit; }
+  /* line 37, ../themes/stylesheets/ext4/default/widgets/_button.scss */
+.nex-btn button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: auto;
+    background: none;
+    outline: 0 none;
+    overflow: hidden;
+    vertical-align: bottom;
+    -webkit-appearance: none;
+	}
+    /* line 48, ../themes/stylesheets/ext4/default/widgets/_button.scss */
+.nex-btn-inner {
+  height: 16px;
+  line-height: 16px;
+  padding-left: 20px;
+}	  
+.nex-btn button, .nex-btn a {
+  position: relative; }	
+  .nex-btn-arrow-right {
+  background: transparent no-repeat right center;
+  padding-right: 12px; }
+  /* line 176, ../themes/stylesheets/ext4/default/widgets/_button.scss */
+  .nex-btn-arrow-right .nex-btn-inner {
+    padding-right: 0 !important; }
+
+/* line 181, ../themes/stylesheets/ext4/default/widgets/_button.scss */
+.nex-toolbar .nex-btn-arrow-right {
+  padding-right: 12px; }
+
+/* line 185, ../themes/stylesheets/ext4/default/widgets/_button.scss */
+.nex-btn-arrow-bottom {
+  background: transparent no-repeat center bottom;
+  padding-bottom: 12px; } 
+.nex-btn-arrow {
+  background-image: url('../../resources/themes/images/default/button/arrow.gif');
+  display: block; }
+
+   .nex-btn button .nex-btn-icon, .nex-btn a .nex-btn-icon {
+    position: absolute;
+    background-repeat: no-repeat; } 
+ .nex-btn-icon {
+  width: 16px;
+  height: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: auto;
+ }    
+</style>
+</head>
+
+<body>
+
+<div class="nex-toolbar" style="width:800px; margin:5px auto;">
+	<div id="button-1043" class="nex-btn nex-btn-default">
+		<em id="button-1043-btnWrap" class="x-btn-arrow x-btn-arrow-right">
+			<button id="button-1043-btnEl" type="button" class="" autocomplete="off">
+				<span id="button-1043-btnInnerEl" class="nex-btn-inner" style="">Button w/ Menu</span>
+				<span id="button-1043-btnIconEl" class="nex-btn-icon bmenu">&nbsp;</span>
+			</button>
+		</em>
+	</div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="http://127.0.0.1/ext-4.1.0-beta-1/resources/css/ext-all.css" />
+<link rel="stylesheet" type="text/css" href="http://127.0.0.1/ext-4.1.0-beta-1/examples/menu/menus.css" />
+
+<div id="container" style="margin:50px auto;">
+        <div id="toolbar"><div id="toolbar-1030" class="x-toolbar x-toolbar-default x-box-layout-ct"><div id="toolbar-1030-innerCt" class="x-box-inner " role="presentation" style=" height: 22px;"><div id="button-1043" class="x-btn x-box-item x-toolbar-item x-btn-default-toolbar-small x-icon-text-left x-btn-icon-text-left x-btn-default-toolbar-small-icon-text-left" style="left: 0px; top: 0px; margin: 0px;"><em id="button-1043-btnWrap" class="x-btn-arrow x-btn-arrow-right"><button id="button-1043-btnEl" type="button" class="" hidefocus="true" role="button" autocomplete="off"><span id="button-1043-btnInnerEl" class="x-btn-inner" style="">Button w/ Menu</span><span id="button-1043-btnIconEl" class="x-btn-icon bmenu">&nbsp;</span></button></em></div><div id="button-1044" class="x-btn x-box-item x-toolbar-item x-btn-default-toolbar-small x-icon-text-left x-btn-icon-text-left x-btn-default-toolbar-small-icon-text-left" style="left: 131px; top: 0px; margin: 0px;"><em id="button-1044-btnWrap" class="x-btn-arrow x-btn-arrow-right"><button id="button-1044-btnEl" type="button" class="" hidefocus="true" role="button" autocomplete="off"><span id="button-1044-btnInnerEl" class="x-btn-inner" style="">Users</span><span id="button-1044-btnIconEl" class="x-btn-icon user">&nbsp;</span></button></em></div><div id="splitbutton-1032" class="x-btn x-box-item x-toolbar-item x-btn-default-toolbar-small x-icon-text-left x-btn-icon-text-left x-btn-default-toolbar-small-icon-text-left" style="left: 200px; top: 0px; margin: 0px;"><em id="splitbutton-1032-btnWrap" class="x-btn-split x-btn-split-right"><button id="splitbutton-1032-btnEl" type="button" class="" hidefocus="true" role="button" autocomplete="off"><span id="splitbutton-1032-btnInnerEl" class="x-btn-inner" style="">Split Button</span><span id="splitbutton-1032-btnIconEl" class="x-btn-icon blist">&nbsp;</span></button></em></div><div id="tbseparator-1051" class="x-toolbar-separator x-box-item x-toolbar-item x-toolbar-separator-horizontal" style="left: 311px; top: 4px; margin: 0px;"></div><div id="button-1052" class="x-btn x-box-item x-toolbar-item x-btn-default-toolbar-small x-noicon x-btn-noicon x-btn-default-toolbar-small-noicon x-pressed x-btn-pressed x-btn-default-toolbar-small-pressed" style="left: 316px; top: 0px; margin: 0px;"><em id="button-1052-btnWrap"><button id="button-1052-btnEl" type="button" class="" hidefocus="true" role="button" autocomplete="off"><span id="button-1052-btnInnerEl" class="x-btn-inner" style="">Toggle Me</span><span id="button-1052-btnIconEl" class="x-btn-icon ">&nbsp;</span></button></em></div><div id="tbseparator-1056" class="x-toolbar-separator x-box-item x-toolbar-item x-toolbar-separator-horizontal" style="left: 392px; top: 4px; margin: 0px;"></div><div id="button-1057" class="x-btn x-box-item x-toolbar-item x-btn-default-toolbar-small x-icon x-btn-icon x-btn-default-toolbar-small-icon" style="left: 397px; top: 0px; margin: 0px;"><em id="button-1057-btnWrap"><button id="button-1057-btnEl" type="button" class="" hidefocus="true" role="button" autocomplete="off" data-qtip="&lt;b&gt;Quick Tips&lt;/b&gt;&lt;br/&gt;Icon only button with tooltip"><span id="button-1057-btnInnerEl" class="x-btn-inner" style="">&nbsp;</span><span id="button-1057-btnIconEl" class="x-btn-icon " style="background-image:url(list-items.gif)">&nbsp;</span></button></em></div><div id="tbseparator-1058" class="x-toolbar-separator x-box-item x-toolbar-item x-toolbar-separator-horizontal" style="left: 423px; top: 4px; margin: 0px;"></div><div id="button-1110" class="x-btn x-box-item x-toolbar-item x-btn-default-toolbar-small x-icon-text-left x-btn-icon-text-left x-btn-default-toolbar-small-icon-text-left x-btn-text-icon" style="left: 428px; top: 0px; margin: 0px;"><em id="button-1110-btnWrap" class="x-btn-arrow x-btn-arrow-right"><button id="button-1110-btnEl" type="button" class="" hidefocus="true" role="button" autocomplete="off"><span id="button-1110-btnInnerEl" class="x-btn-inner" style="">Scrolling Menu</span><span id="button-1110-btnIconEl" class="x-btn-icon " style="background-image:url(preview.png)">&nbsp;</span></button></em></div><div id="button-1111" class="x-btn x-box-item x-toolbar-item x-btn-default-toolbar-small x-noicon x-btn-noicon x-btn-default-toolbar-small-noicon" style="left: 546px; top: 0px; margin: 0px;"><em id="button-1111-btnWrap"><a id="button-1111-btnEl" href="http://www.google.com/search?q=html%2Banchor%2Btag" class="" target="_blank" role="link" data-qtip="This is a link. You can right click. You can see where it will take you"><span id="button-1111-btnInnerEl" class="x-btn-inner">Link</span><span id="button-1111-btnIconEl" class="x-btn-icon "></span></a></em></div><table id="combobox-1112" class="x-field x-form-item x-box-item x-toolbar-item x-field-default-toolbar" style="width: 135px; table-layout: fixed; left: 583px; top: 1px; margin: 0px;" cellspacing="0" cellpadding="0"><tbody><tr id="combobox-1112-inputRow"><td id="combobox-1112-labelCell" style="display:none;" valign="top" halign="left" width="105"><label id="combobox-1112-labelEl" for="combobox-1112-inputEl" class="x-form-item-label x-form-item-label-left" style="width:100px;margin-right:5px;"></label></td><td class="x-form-item-body" id="combobox-1112-bodyEl" role="presentation" colspan="3" style="width: 100%;"><table id="combobox-1112-triggerWrap" class="x-form-trigger-wrap" cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed;"><tbody><tr><td id="combobox-1112-inputCell" style="width: 100%;"><div class="x-hide-display x-form-data-hidden" role="presentation" id="ext-gen1142"></div><input id="combobox-1112-inputEl" type="text" name="combobox-1112-inputEl" placeholder="Select a state..." style="width: 100%;" class="x-form-field x-form-text x-form-empty-field" autocomplete="off" aria-invalid="false" data-errorqtip=""></td><td valign="top" class="x-trigger-cell" style="width:17px" id="ext-gen1141"><div class="x-trigger-index-0 x-form-trigger x-form-arrow-trigger x-form-trigger-last x-unselectable" role="button" id="ext-gen1140"></div></td></tr></tbody></table></td></tr></tbody></table></div></div></div>
+    </div>
+</body>
+</html>

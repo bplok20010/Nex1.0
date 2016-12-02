@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/nex/jquery.nexBase.js"></script>
+<script type="text/javascript" src="js/nex/showat/jquery.nexShowAt.js"></script>
+<script type="text/javascript" src="js/nex/menu/jquery.nexMenu.js"></script>
+<script type="text/javascript" src="js/nex/button/jquery.nexButton.js"></script>
+<link href="./css/menu/nexMenu.css" rel="stylesheet" type="text/css" />
+<link href="./css/buttons/nexButton.css" rel="stylesheet" type="text/css" />
+<title>buttons</title>
+<!--<style type="text/css">
+.nex-btn
+{
+
+position: relative;
+display: inline-block;
+vertical-align: top;
+width: auto;
+margin:0;
+padding: 1px 3px 1px 3px;
+border: 0;
+/*background: 0;*/
+/*border-radius : 3px;*/
+cursor:default;
+*zoom:1;
+*display: inline;
+}
+.nex-btn-over {
+background-color: #d5e1f2;
+padding: 0px 2px 0px 2px;
+border: 1px solid #a3bde3;
+_z-index: 1;
+}
+.nex-btn-icon {
+width:20px; height:20px;
+}
+.nex-btn-inner { display:inline-block;vertical-align: top}
+.nex-btn-select {
+
+}
+.nex-btn .nex-icon-fullscreen {
+background-position: -100px -20px;
+}
+.nex-icon {
+width: 20px;
+height: 20px;
+margin: 0;
+padding: 0;
+background-repeat: no-repeat;
+background-image: url(./css/buttons/images/icons.png);
+background-image: url(./css/buttons/images/icons.gif) \9;
+}
+
+.nex-splitbutton {
+	position: relative;
+	display: inline-block;
+	*zoom:1;
+	*display: inline;
+	vertical-align: top;
+	margin: 0 1px;
+	padding: 1px;
+	border-radius : 3px;
+}
+.nex-splitbutton .nex-btn {
+margin: 0;
+padding:0;
+}
+.nex-btn-caret {
+width: 8px;
+height: 20px;
+background: url(./css/buttons/images/icons.png) -741px 0;
+_background: url(./css/buttons/images/icons.gif) -741px 0;
+}
+.nex-btn-caret-line {
+width: 1px;
+height: 20px;
+}
+.nex-btn:hover .nex-btn-caret-line {
+background:#a3bde3
+}
+.nex-separator {
+width: 2px;
+height: 20px;
+padding: 1px 2px;
+background: url(./css/buttons/images/icons.png)  -179px 1px;
+_background: url(./css/buttons/images/icons.gif)  -179px 1px;
+display: inline-block;
+
+*zoom:1;
+*display: inline;
+vertical-align: top;
+border: 0;
+}
+.nex-btn-text {
+ font-size:12px; font-family:Arial, Helvetica, sans-serif; 
+line-height:20px;
+ height:20px;
+ padding: 0 2px 0 0;
+ } 
+</style>-->
+</head>
+<!--<link href="./css/tabs/nexTab.css" rel="stylesheet" type="text/css" />-->
+<style type="text/css">
+
+</style>
+<body>
+<!--<style type="text/css">
+.nex-btn:focus { outline: none; }
+.nex-btn:visited {}
+.nex-btn:hover {}
+.nex-btn:active { }
+.nex-btn {
+display:inline-block;
+color:#000;
+text-decoration:none; 
+outline: 0 none; 
+font-family: "微软雅黑",Arial, Helvetica, sans-serif;
+font-size:11px;
+margin:0 0 0 5px;
+cursor: pointer;
+}
+.nex-btn-wraper {
+display:inline-block;
+vertical-align:middle;
+padding:0 4px;
+color: #444;
+background: #fafafa;
+background-repeat: repeat-x;
+border: 1px solid #bbb;
+background: -webkit-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+background: -moz-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+background: -o-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+background: linear-gradient(to bottom,#ffffff 0,#eeeeee 100%);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#eeeeee,GradientType=0);
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+border-radius:3px;
+}
+.nex-btn-plain .nex-btn-wraper{
+border:none;
+background:none;
+padding:1px 5px;
+}
+.nex-btn:hover .nex-btn-wraper,
+.nex-btn-hover .nex-btn-wraper
+ {
+background: #eaf2ff;
+color: #000000;
+border: 1px solid #b7d2ff;
+filter: none;
+position:relative;
+padding:0 4px;
+}
+.nex-btn-inner {
+	padding:2px 0; 
+	height:18px; 
+	line-height:18px;
+	display:inline-block;
+	vertical-align:middle;
+	background-position:center;
+	background-repeat:no-repeat;
+ }
+.nex-btn-icon,
+.nex-btn-arrow { 
+	width:16px;
+	margin-right:3px;
+}
+.nex-btn-arrow {
+margin-left:3px;
+margin-right:0px;
+width:8px;
+background:url(images/arrow.gif) no-repeat center;
+}
+.nex-btn-sep{ 
+width:1px;
+margin-left:3px;
+}
+.nex-btn:hover .nex-btn-sep,
+.nex-btn-hover .nex-btn-sep{
+background:#b7d2ff;
+}
+
+</style>-->
+<div class="nex-toolbar" style="width:800px; margin:5px auto; padding:2px 0; border:1px solid red; text-align:center;">
+<a class="nex-btn nex-btn-plain nex-btn-disabled" href="javascript:void(0);" hidefocus="true">
+	<span class="nex-btn-wraper">
+	<span class="nex-btn-inner nex-btn-icon"></span><span class="nex-btn-inner nex-btn-text">确定</span><span class="nex-btn-inner nex-btn-arrow"></span>	</span></a><a class="nex-btn" href="javascript:void(0);" hidefocus="true">
+	<span class="nex-btn-wraper">
+	<span class="nex-btn-inner nex-btn-icon"></span><span class="nex-btn-inner nex-btn-text">确定</span><span class="nex-btn-inner nex-btn-sep"></span><span class="nex-btn-inner nex-btn-arrow"></span>	</span>
+</a></div>
+<div>
+	ICON普通按钮 :
+	<div class="nex-btn nex-btn-icon" unselectable="on" onmousedown="return false" data-original-title="全屏">
+		<span unselectable="on" class="nex-btn-inner nex-icon"></span>
+	</div><div class="nex-btn nex-btn-icon" unselectable="on" onmousedown="return false" data-original-title="全屏">
+		<span unselectable="on" class="nex-btn-inner nex-icon"></span>
+	</div>
+</div>
+<div>
+	按钮分隔符 :
+	<div class="nex-separator"></div>
+</div>
+<div>
+	select文字按钮 :
+	<div class="nex-btn nex-btn-select">
+		<span class="nex-btn-inner nex-icon"></span><span class="nex-btn-inner nex-btn-text" style="">确定</span><span class="nex-btn-inner nex-btn-caret"></span>
+	</div>
+</div>
+<div>
+	split文字按钮 :
+	<div class="nex-btn nex-btn-select">
+		<span class="nex-btn-inner nex-icon"></span><span class="nex-btn-inner nex-btn-text" style="">确定</span><span class="nex-btn-inner nex-btn-caret-line"></span><span class="nex-btn-inner nex-btn-caret"></span>
+	</div>
+	
+</div>
+
+<div class="nex-separator"></div>
+<div class="nex-splitbutton nex-splitbutton-forecolor" unselectable="on" data-original-title="字体颜色">
+	<div class="nex-btn" unselectable="on">
+		<div unselectable="on" class="nex-icon-forecolor nex-icon"></div>
+		<div class="nex-splitbutton-color-label"></div>
+	</div><div unselectable="on" class="nex-btn nex-dropdown-toggle">
+		<div unselectable="on" class="nex-caret"></div>
+	</div>
+</div>|
+<div class="nex-splitbutton nex-splitbutton-forecolor" unselectable="on" data-original-title="字体颜色">
+	<div class="nex-btn" unselectable="on">
+		<div unselectable="on" class="nex-icon-forecolor nex-icon"></div>
+		<div class="nex-splitbutton-color-label"></div>
+	</div><div class="nex-btn nex-btn-text" unselectable="on">adfadfafa
+	</div><div unselectable="on" class="nex-btn nex-split">
+		<div unselectable="on" class="nex-caret"></div>
+	</div><div unselectable="on" class="nex-btn nex-dropdown-toggle">
+		<div unselectable="on" class="nex-caret"></div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	var btn = new Nex.button({
+		text : 'Hello!',
+		icon : 'http://127.0.0.1:8221/ext-4.1.0-beta-1/examples/menu/menu-show.gif',
+		menu : [{text:'test'}],
+		splitBtn : true,
+		callBack : function(){
+			alert('Hello Way!')
+		}
+	});
+});
+</script>
+</html>

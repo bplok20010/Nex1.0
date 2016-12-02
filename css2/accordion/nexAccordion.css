@@ -1,0 +1,72 @@
+.nex-accordion {
+  overflow: hidden;
+  padding: 0;
+  font-family: tahoma, arial, verdana, sans-serif;
+  font-size: 12px;
+  display:block;
+  background:#FFF;
+}
+.nex-accordion-auto-scroll { overflow:auto;}
+.nex-accordion-border { border:1px solid #95B8E7;}
+.nex-accordion-item {
+	position:relative;
+  overflow: hidden;
+  padding: 0;
+  display:block;
+}
+.nex-accordion-header {
+  background: transparent;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.nex-accordion-header {
+  color: #0E2D5F;
+  padding:4px 5px 5px 5px;
+  position:relative;
+}
+.nex-accordion-header
+{
+	cursor:pointer;
+  border-color: #95B8E7;
+  background: #E0ECFF;
+}
+.nex-accordion-active .nex-accordion-header { font-weight:bold;}
+.nex-accordion-title-text { height:16px; line-height:16px;}
+.nex-accordion-tools {
+position:absolute;
+right:5px;
+top:4px;
+}
+.nex-accordion-title-text .title-icon,
+.nex-accordion-tools a {
+display: inline-block;
+width: 16px;
+height: 16px;
+opacity: 0.6;
+filter: alpha(opacity=60);
+margin: 0 0 0 2px;
+vertical-align: top;
+text-align:center;
+}
+.nex-accordion-tools a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background-color: #eaf2ff;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.nex-accordion-body {
+  position:relative;
+  background-color: #ffffff;
+  color: #000000;
+  overflow:hidden;
+}
+.nex-accordion-item-auto-scroll .nex-accordion-body { overflow:auto;}
+.nex-accordion-expand .accordion-collapse {
+  background: url('images/accordion_arrows.png') no-repeat -16px 0;
+}
+.nex-accordion-collapse .accordion-collapse {
+  background: url('images/accordion_arrows.png') no-repeat 0 0;
+}

@@ -1,0 +1,59 @@
+1.新增一个扩展layout 高度是auto的
+2.tree 删除节点
+3.nexBase removeCmp 是否可以选择只删除当前children
+4.drop drag
+5.单个checkbox OK
+6.fieldSet
+7.关于auto宽高组件
+25.关于多表头多个不同行出现的不对其问题，应该使用onHeaderCreate 后 对header里的table都设置一个相同的高度就OK 待解决
+26.当field出现@#￥*（）等字符是 或出现很多问题 比如jquery选择器不能呢个带有( ) 会报错 待解决
+27 formater grid添加 OK
+28.reader 等 添加field 参数  OK tpl=
+30 form 组件val返回{}处理
+40 form 组件 下拉框列表中 使用value=问题 如果value自带""会出现问题
+50 新增一个sortField 可控制显示位置 为以后的可拖拽做下基础 待实现
+事件委托问题...
+form.select val('') 时 inputKey值没有改变
+checkbox IE下 val 无效问题 this.checked=true
+grid width 百分比 精确到 小数点2位
+grid.columns 宽度cutWidth
+grid 列宽不用field
+grid formate
+grid setFieldValue 关于 如果值改变 应该继续执行但是不触发事件
+grid lockRow 后刷新grid 行锁的editColumn 会为空白 原因 应该在刷新grid之前resetHeader 否则的话会获取到header的旧td 
+setWH 的不要留小数 因为浏览器会根据小数来四舍五入
+
+grid默认的ajax用起来分不方便...
+
+grid 可编辑可能根据每行出现不同编辑框...
+
+继承还是有些问题，应该尽可能用setOptions 主要问题是 addConf 这里应该用func而不是｛｝
+
+tree不应该吧事件绑定到li上
+
+属性grid 以及可编辑grid
+
+所有组件都应该加上border 属性
+考虑padding 问题
+
+Nex.form onCreate 问题要不要延迟创建？ Ok
+
+Nex.form focus class 问题
+所有组件继承html问题
+
+=============resize发现了一个比较棘手的BUG=============
+eg ： grid 设置autoHeight 后 如果高度刚好没有滚动条， autoHeight 后 出现了滚动条，
+这个时候会触发resize() grid通过resize 又会设置grid的高度 滚动条又会消失，然后又重复了刚才
+的动作 autoHeight.... 如此循环
+
+=============grid修改需要考虑到的问题===================
+1.行列锁
+2.expandRow
+3.resize
+4.autoHeight
+5.setFieldWidth
+6.group
+7.sort
+8.lazyLoad
+
+// color : ['#4A89DC','#4FC1E9','#3BAFDA','#48CFAD','#37BC9B','#A0D468','#8CC152','#FFCE54','#F6BB42','#FC6E51','#E9573F'],

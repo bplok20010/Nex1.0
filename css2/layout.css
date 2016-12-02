@@ -1,0 +1,153 @@
+﻿.nex-unselectable {
+  user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  cursor: default; }
+.nex-layout {
+position: relative;
+overflow: hidden;
+margin: 0;
+padding: 0;
+z-index: 0;
+border:1px solid #E6EEF8;
+}
+
+.nex-layout-north,
+.nex-layout-south{
+  z-index: 3;
+}
+.nex-layout-east,
+.nex-layout-west{
+  z-index: 2;
+}
+.nex-layout-panel {
+position:absolute;
+overflow:hidden;
+}
+.nex-layout-north,
+.nex-layout-south,
+.nex-layout-west,
+.nex-layout-east,
+.nex-layout-center{
+border:1px solid #99bce8;
+}
+.nex-layout-split {
+display:block;
+overflow:hidden;
+}
+.nex-layout-north-split-i,
+.nex-layout-south-split-i {
+position:absolute;
+left:50%;
+width:50px;
+margin-left:-25px;
+height:100%;
+overflow:hidden;
+cursor:pointer;
+background:#D4D4D4;
+}
+.nex-layout-north-split-i:hover,
+.nex-layout-south-split-i:hover {
+background: #77FF77;
+}
+.nex-layout-west-split-i,
+.nex-layout-east-split-i {
+position:absolute;
+top:50%;
+height:50px;
+margin-top:-25px;
+width:100%;
+overflow:hidden;
+cursor:pointer;
+background:#D4D4D4;
+}
+.nex-layout-west-split-i:hover,
+.nex-layout-east-split-i:hover {
+background: #77FF77;
+}
+
+.nex-layout-west-split,
+.nex-layout-east-split{
+cursor:col-resize;
+}
+.nex-layout-north-split,
+.nex-layout-south-split{
+cursor:row-resize;
+}
+.nex-layout-north-split,
+.nex-layout-south-split,
+.nex-layout-west-split,
+.nex-layout-east-split{
+background:#E6EEF8;
+}
+.nex-layout-north-collapsible,
+.nex-layout-south-collapsible,
+.nex-layout-west-collapsible,
+.nex-layout-east-collapsible{
+position: absolute;
+padding: 0px;
+font-size: 1px;
+cursor: pointer;
+z-index: 1;
+background-color: #E0ECFF;
+border:1px solid #99bce8;
+}
+.nex-layout-collapsible-header {
+padding: 5px;
+position: relative;
+height: 16px;
+line-height: 16px;
+}
+.nex-layout-tool {
+position: absolute;
+top: 50%;
+margin-top: -8px;
+height: 16px;
+overflow: hidden;
+
+right: 5px;
+width: auto;
+}
+.nex-layout-button-north,
+.nex-layout-button-south,
+.nex-layout-header-buttons {
+cursor:pointer;
+margin: 0 0 0 2px;
+opacity: 0.6;
+filter: alpha(opacity=60);
+width:16px;
+height:16px;
+line-height:16px;
+background:#FFF;
+border:1px solid red;
+}
+.nex-layout-west-collapsible .nex-layout-collapsible-header,
+.nex-layout-east-collapsible .nex-layout-collapsible-header {
+width:16px;
+}
+.nex-layout-header {
+padding: 5px;
+position: relative;
+border-bottom:1px solid #99bce8;
+background-color: #E0ECFF;
+  background: -webkit-linear-gradient(top,#EFF5FF 0,#E0ECFF 100%);
+  background: -moz-linear-gradient(top,#EFF5FF 0,#E0ECFF 100%);
+  background: -o-linear-gradient(top,#EFF5FF 0,#E0ECFF 100%);
+  background: linear-gradient(to bottom,#EFF5FF 0,#E0ECFF 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#EFF5FF,endColorstr=#E0ECFF,GradientType=0);
+}
+.nex-layout-body{
+position:relative;
+background-color: #ffffff;
+color: #000000;
+overflow:hidden;
+}
+.nex-layout-header-title {
+font-weight: bold;
+color: #0E2D5F;
+height: 16px;
+line-height: 16px;
+}

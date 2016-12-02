@@ -1,0 +1,129 @@
+﻿.nex-unselectable {
+  user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  cursor: default; }
+.nex-layout {
+position: relative;
+overflow: hidden;
+margin: 0;
+padding: 0;
+z-index: 0;
+border:1px solid #E6EEF8;
+background:url(images/spacer.gif) repeat;
+}
+.nex-layout-container {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background:url(images/spacer.gif) repeat;
+}
+.nex-layout-north,
+.nex-layout-south{
+  z-index: 3;
+}
+.nex-layout-east,
+.nex-layout-west{
+  z-index: 2;
+}
+.nex-layout-panel {
+position:absolute;
+overflow:hidden;
+background:url(images/spacer.gif) repeat;
+background:#FFF;
+}
+
+.nex-layout-north,
+.nex-layout-south,
+.nex-layout-west,
+.nex-layout-east,
+.nex-layout-center{
+border:1px solid #99bce8;
+}
+.nex-layout-split {
+display:block;
+overflow:hidden;
+}
+.nex-layout-north-split-i,
+.nex-layout-south-split-i {
+position:absolute;
+left:50%;
+width:35px;
+margin-left:-17.5px;
+height:100%;
+overflow:hidden;
+cursor:pointer;
+background:#D4D4D4;
+cursor:default;
+}
+.nex-layout-north-split-i:hover,
+.nex-layout-south-split-i:hover {
+/*background: #77FF77;*/
+}
+.nex-layout-west-split-i,
+.nex-layout-east-split-i {
+position:absolute;
+top:50%;
+height:35px;
+margin-top:-17.5px;
+width:100%;
+overflow:hidden;
+cursor:pointer;
+background:#D4D4D4;
+cursor:default;
+}
+.nex-layout-west-split-i:hover,
+.nex-layout-east-split-i:hover {
+/*background: #77FF77;*/
+}
+.nex-layout-north-split-i {
+background:url(images/mini-top.gif)
+}
+.nex-layout-south-split-i {
+background:url(images/mini-bottom.gif)
+}
+.nex-layout-west-split-i {
+background:url(images/mini-left.gif)
+}
+.nex-layout-east-split-i {
+background:url(images/mini-right.gif)
+}
+.nex-layout-split-closed .nex-layout-north-split-i {
+background:url(images/mini-bottom.gif)
+}
+.nex-layout-split-closed .nex-layout-south-split-i {
+background:url(images/mini-top.gif)
+}
+.nex-layout-split-closed .nex-layout-west-split-i {
+background:url(images/mini-right.gif)
+}
+.nex-layout-split-closed .nex-layout-east-split-i {
+background:url(images/mini-left.gif)
+}
+
+.nex-layout-west-split,
+.nex-layout-east-split{
+/*cursor:col-resize;*/
+}
+.nex-layout-north-split,
+.nex-layout-south-split{
+/*cursor:row-resize;*/
+}
+.nex-layout-north-split,
+.nex-layout-south-split,
+.nex-layout-west-split,
+.nex-layout-east-split{
+background:#E6EEF8;
+}
+.nex-layout-body{
+position:relative;
+background-color: #ffffff;
+color: #000000;
+overflow:hidden;/*设为auto在 chrome下当出现滚动条时即便后面没有超出滚动条也不消失*/
+}
+.nex-layout-auto-scroll {
+overflow:auto;
+}
